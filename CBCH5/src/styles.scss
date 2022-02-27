@@ -509,8 +509,32 @@ display: none !important;
 
 
 
+.areaspan
+{
+
+  .ch5-button--primary.ch5-button--selected {
+    
+    border-color: #000000;
+    background-color: #007bff63;
+    color: #333;
+}
+}
 
 
+
+.zonespan
+{
+  .ch5-button--primary.ch5-button--selected {
+    border-color: #000000;
+    background-color: #91ff81a8;
+    color: #333;
+}
+
+.ch5-list{
+  height: 50vh !important;
+  overflow-y: scroll !important;  
+}
+}
 
 
 

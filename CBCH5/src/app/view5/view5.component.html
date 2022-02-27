@@ -1,4 +1,8 @@
+<button mat-raised-button color="accent" (click)="clicked()" style="text-align: center; margin-top: 1em;
+margin-left: 1em; width: 5vw; background-color: aliceblue; padding: 0;"> Return </button>
+
 <div class="main">
+
 <cdk-virtual-scroll-viewport id="eventscrollsch" itemSize="7" class=" scroller ">
     <div *cdkVirtualFor="let item of evt; let idx = index" class="events animate__animated animate__fadeIn">
         <div class=" source-list contain">
@@ -68,5 +72,4 @@
     </div>
 </cdk-virtual-scroll-viewport>
 
-<button mat-raised-button color="accent" (click)="clicked()" style="text-align: center; width: 5vw; background-color: aliceblue; padding: 0;"> OK </button>
 </div>

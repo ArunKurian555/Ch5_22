@@ -40,9 +40,15 @@ namespace CBlink
         public CBlink.IPinpad Pinpad { get { return (CBlink.IPinpad)InternalPinpad; } }
         private CBlink.Pinpad InternalPinpad { get; set; }
 
+        public CBlink.ILoads[] Loads { get { return InternalLoads.Cast<CBlink.ILoads>().ToArray(); } }
+        private CBlink.Loads[] InternalLoads { get; set; }
+
         #endregion
 
         #region Construction and Initialization
+
+        private static readonly IDictionary<int, uint> LoadsSmartObjectIdMappings = new Dictionary<int, uint>{
+            { 0, 7 }, { 1, 8 }, { 2, 9 }, { 3, 10 }};
 
         public Contract()
             : this(new List<BasicTriListWithSmartObject>().ToArray())
@@ -67,11 +73,22 @@ namespace CBlink
             InternalSch = new CBlink.Sch(ComponentMediator, 4);
             InternalZonerename = new CBlink.Zonerename(ComponentMediator, 5);
             InternalPinpad = new CBlink.Pinpad(ComponentMediator, 6);
+            InternalLoads = new CBlink.Loads[LoadsSmartObjectIdMappings.Count];
+            for (int index = 0; index < LoadsSmartObjectIdMappings.Count; index++)
+            {
+                InternalLoads[index] = new CBlink.Loads(ComponentMediator, LoadsSmartObjectIdMappings[index]);
+            }
 
             for (int index = 0; index < devices.Length; index++)
             {
                 AddDevice(devices[index]);
             }
+        }
+
+        public static void ClearDictionaries()
+        {
+            LoadsSmartObjectIdMappings.Clear();
+
         }
 
         #endregion
@@ -88,6 +105,10 @@ namespace CBlink
             InternalSch.AddDevice(device);
             InternalZonerename.AddDevice(device);
             InternalPinpad.AddDevice(device);
+            for (int index = 0; index < 4; index++)
+            {
+                InternalLoads[index].AddDevice(device);
+            }
         }
 
         public void RemoveDevice(BasicTriListWithSmartObject device)
@@ -98,6 +119,10 @@ namespace CBlink
             InternalSch.RemoveDevice(device);
             InternalZonerename.RemoveDevice(device);
             InternalPinpad.RemoveDevice(device);
+            for (int index = 0; index < 4; index++)
+            {
+                InternalLoads[index].RemoveDevice(device);
+            }
         }
 
         #endregion
@@ -119,6 +144,10 @@ namespace CBlink
             InternalSch.Dispose();
             InternalZonerename.Dispose();
             InternalPinpad.Dispose();
+            for (int index = 0; index < 4; index++)
+            {
+                InternalLoads[index].Dispose();
+            }
             ComponentMediator.Dispose(); 
         }
 

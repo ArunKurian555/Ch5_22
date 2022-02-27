@@ -1,8 +1,12 @@
+<button mat-raised-button (click)="onclick()" class="lock">
+    <mat-icon class="fas fa-lock fa-2x" style="margin: 1px;"></mat-icon>
+    
+</button>
 
 <div class="contain">
-    <button  class="buttons" mat-raised-button (click)="onclick()">
+    <button  class="buttons" mat-raised-button (click)="scenesave()">
         <!-- <mat-icon class="fas fa-lock fa-2x" style="margin: 1vw;"></mat-icon> -->
-        <p>Lock</p>
+        <p>Scene Save</p>
     </button>
 
     <button class="buttons" mat-raised-button (click)="editname()">
@@ -15,9 +19,9 @@
         <p>Passcode</p>
     </button>
     
-    <button  class="buttons" mat-raised-button (click)="floorplan()">
+    <button  class="buttons" mat-raised-button (click)="LoadSelector()">
         <!-- <mat-icon class="fas fa-building fa-2x" style="margin: 1vw;" > </mat-icon> -->
-        <p>Floorplan</p>
+        <p>Load Settings</p>
     </button>
     <button class="buttons " mat-raised-button (click)="clicked2($event)" >
         <mat-icon class="fas fa-save fa-2x" style="margin: 1vw;"> <span class="material-icons" style="font-size: 5rem;" >
@@ -47,6 +51,6 @@
         <div>
             <button class="buttons" mat-raised-button (click)="ZoneArea()" >
                 <!-- <mat-icon class="fas fa-edit fa-2x" style="margin: 1vw;"></mat-icon> -->
-                <p>Zone Select</p>
+                <p>Zone Area</p>
             </button></div>
 </div>

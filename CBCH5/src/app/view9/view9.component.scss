@@ -30,6 +30,7 @@
     width: 1500px;
     height: 800px;
     border: double;
+    margin-top: 1em;
     
     background: url("../../assets/fp1.JPG");
     background-repeat: no-repeat;
@@ -40,7 +41,7 @@
   .contain
   {
     background: azure;
-    display: grid;
+    
     overflow-x: scroll;
     overflow-y: hidden;
     width: 100%;

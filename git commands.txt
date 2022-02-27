@@ -1,4 +1,4 @@
-cd C:\Users\arune\OneDrive - SLSLTG\Cold_Brew\Touch Panel\HTML5\V_Workshop_250
+cd C:\Users\arune\OneDrive\Desktop\Crestron Offline\HTML5\V2_Workshop
  git add .
  git commit -m "Changes"
  git push 

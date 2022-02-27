@@ -7,7 +7,8 @@
                 <template ngNonBindable>
                     <ch5-button type="primary" style="height: 6em; padding: 0; margin: 0;" stretch="both"
                         receivestatelabel="Area.AreaName{{idx}}" size="regular" shape="rounded-rectangle"
-                        sendEventOnClick="Area.AreaSelect{{idx}}">
+                        sendEventOnClick="Area.AreaSelect{{idx}} " receivestateselected="Area.AreaSelected{{idx}}
+                        ">
                     </ch5-button>
                 </template>
             </ch5-list>

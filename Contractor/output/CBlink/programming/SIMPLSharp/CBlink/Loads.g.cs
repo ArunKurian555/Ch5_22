@@ -6,10 +6,11 @@ using Crestron.SimplSharpPro;
 
 namespace CBlink
 {
-    public interface IZones
+    public interface ILoads
     {
         object UserObject { get; set; }
 
+        event EventHandler<UIEventArgs> Press0;
         event EventHandler<UIEventArgs> Press1;
         event EventHandler<UIEventArgs> Press2;
         event EventHandler<UIEventArgs> Press3;
@@ -198,7 +199,6 @@ namespace CBlink
         event EventHandler<UIEventArgs> Press186;
         event EventHandler<UIEventArgs> Press187;
         event EventHandler<UIEventArgs> Press188;
-        event EventHandler<UIEventArgs> Press189;
         event EventHandler<UIEventArgs> Press190;
         event EventHandler<UIEventArgs> Press191;
         event EventHandler<UIEventArgs> Press192;
@@ -259,516 +259,266 @@ namespace CBlink
         event EventHandler<UIEventArgs> Press247;
         event EventHandler<UIEventArgs> Press248;
         event EventHandler<UIEventArgs> Press249;
-        event EventHandler<UIEventArgs> Press0;
-        event EventHandler<UIEventArgs> Save_Area;
+        event EventHandler<UIEventArgs> Press250;
+        event EventHandler<UIEventArgs> Press189;
 
-        void Pressed1(ZonesBoolInputSigDelegate callback);
-        void Pressed2(ZonesBoolInputSigDelegate callback);
-        void Pressed3(ZonesBoolInputSigDelegate callback);
-        void Pressed4(ZonesBoolInputSigDelegate callback);
-        void Pressed5(ZonesBoolInputSigDelegate callback);
-        void Pressed6(ZonesBoolInputSigDelegate callback);
-        void Pressed7(ZonesBoolInputSigDelegate callback);
-        void Pressed8(ZonesBoolInputSigDelegate callback);
-        void Pressed9(ZonesBoolInputSigDelegate callback);
-        void Pressed10(ZonesBoolInputSigDelegate callback);
-        void Pressed11(ZonesBoolInputSigDelegate callback);
-        void Pressed12(ZonesBoolInputSigDelegate callback);
-        void Pressed13(ZonesBoolInputSigDelegate callback);
-        void Pressed14(ZonesBoolInputSigDelegate callback);
-        void Pressed15(ZonesBoolInputSigDelegate callback);
-        void Pressed16(ZonesBoolInputSigDelegate callback);
-        void Pressed17(ZonesBoolInputSigDelegate callback);
-        void Pressed18(ZonesBoolInputSigDelegate callback);
-        void Pressed19(ZonesBoolInputSigDelegate callback);
-        void Pressed20(ZonesBoolInputSigDelegate callback);
-        void Pressed21(ZonesBoolInputSigDelegate callback);
-        void Pressed22(ZonesBoolInputSigDelegate callback);
-        void Pressed23(ZonesBoolInputSigDelegate callback);
-        void Pressed24(ZonesBoolInputSigDelegate callback);
-        void Pressed25(ZonesBoolInputSigDelegate callback);
-        void Pressed26(ZonesBoolInputSigDelegate callback);
-        void Pressed27(ZonesBoolInputSigDelegate callback);
-        void Pressed28(ZonesBoolInputSigDelegate callback);
-        void Pressed29(ZonesBoolInputSigDelegate callback);
-        void Pressed30(ZonesBoolInputSigDelegate callback);
-        void Pressed31(ZonesBoolInputSigDelegate callback);
-        void Pressed32(ZonesBoolInputSigDelegate callback);
-        void Pressed33(ZonesBoolInputSigDelegate callback);
-        void Pressed34(ZonesBoolInputSigDelegate callback);
-        void Pressed35(ZonesBoolInputSigDelegate callback);
-        void Pressed36(ZonesBoolInputSigDelegate callback);
-        void Pressed37(ZonesBoolInputSigDelegate callback);
-        void Pressed38(ZonesBoolInputSigDelegate callback);
-        void Pressed39(ZonesBoolInputSigDelegate callback);
-        void Pressed40(ZonesBoolInputSigDelegate callback);
-        void Pressed41(ZonesBoolInputSigDelegate callback);
-        void Pressed42(ZonesBoolInputSigDelegate callback);
-        void Pressed43(ZonesBoolInputSigDelegate callback);
-        void Pressed44(ZonesBoolInputSigDelegate callback);
-        void Pressed45(ZonesBoolInputSigDelegate callback);
-        void Pressed46(ZonesBoolInputSigDelegate callback);
-        void Pressed47(ZonesBoolInputSigDelegate callback);
-        void Pressed48(ZonesBoolInputSigDelegate callback);
-        void Pressed49(ZonesBoolInputSigDelegate callback);
-        void Pressed50(ZonesBoolInputSigDelegate callback);
-        void Pressed51(ZonesBoolInputSigDelegate callback);
-        void Pressed52(ZonesBoolInputSigDelegate callback);
-        void Pressed53(ZonesBoolInputSigDelegate callback);
-        void Pressed54(ZonesBoolInputSigDelegate callback);
-        void Pressed55(ZonesBoolInputSigDelegate callback);
-        void Pressed56(ZonesBoolInputSigDelegate callback);
-        void Pressed57(ZonesBoolInputSigDelegate callback);
-        void Pressed58(ZonesBoolInputSigDelegate callback);
-        void Pressed59(ZonesBoolInputSigDelegate callback);
-        void Pressed60(ZonesBoolInputSigDelegate callback);
-        void Pressed61(ZonesBoolInputSigDelegate callback);
-        void Pressed62(ZonesBoolInputSigDelegate callback);
-        void Pressed63(ZonesBoolInputSigDelegate callback);
-        void Pressed64(ZonesBoolInputSigDelegate callback);
-        void Pressed65(ZonesBoolInputSigDelegate callback);
-        void Pressed66(ZonesBoolInputSigDelegate callback);
-        void Pressed67(ZonesBoolInputSigDelegate callback);
-        void Pressed68(ZonesBoolInputSigDelegate callback);
-        void Pressed69(ZonesBoolInputSigDelegate callback);
-        void Pressed70(ZonesBoolInputSigDelegate callback);
-        void Pressed71(ZonesBoolInputSigDelegate callback);
-        void Pressed72(ZonesBoolInputSigDelegate callback);
-        void Pressed73(ZonesBoolInputSigDelegate callback);
-        void Pressed74(ZonesBoolInputSigDelegate callback);
-        void Pressed75(ZonesBoolInputSigDelegate callback);
-        void Pressed76(ZonesBoolInputSigDelegate callback);
-        void Pressed77(ZonesBoolInputSigDelegate callback);
-        void Pressed78(ZonesBoolInputSigDelegate callback);
-        void Pressed79(ZonesBoolInputSigDelegate callback);
-        void Pressed80(ZonesBoolInputSigDelegate callback);
-        void Pressed81(ZonesBoolInputSigDelegate callback);
-        void Pressed82(ZonesBoolInputSigDelegate callback);
-        void Pressed83(ZonesBoolInputSigDelegate callback);
-        void Pressed84(ZonesBoolInputSigDelegate callback);
-        void Pressed85(ZonesBoolInputSigDelegate callback);
-        void Pressed86(ZonesBoolInputSigDelegate callback);
-        void Pressed87(ZonesBoolInputSigDelegate callback);
-        void Pressed88(ZonesBoolInputSigDelegate callback);
-        void Pressed89(ZonesBoolInputSigDelegate callback);
-        void Pressed90(ZonesBoolInputSigDelegate callback);
-        void Pressed91(ZonesBoolInputSigDelegate callback);
-        void Pressed92(ZonesBoolInputSigDelegate callback);
-        void Pressed93(ZonesBoolInputSigDelegate callback);
-        void Pressed94(ZonesBoolInputSigDelegate callback);
-        void Pressed95(ZonesBoolInputSigDelegate callback);
-        void Pressed96(ZonesBoolInputSigDelegate callback);
-        void Pressed97(ZonesBoolInputSigDelegate callback);
-        void Pressed98(ZonesBoolInputSigDelegate callback);
-        void Pressed99(ZonesBoolInputSigDelegate callback);
-        void Pressed100(ZonesBoolInputSigDelegate callback);
-        void Pressed101(ZonesBoolInputSigDelegate callback);
-        void Pressed102(ZonesBoolInputSigDelegate callback);
-        void Pressed103(ZonesBoolInputSigDelegate callback);
-        void Pressed104(ZonesBoolInputSigDelegate callback);
-        void Pressed105(ZonesBoolInputSigDelegate callback);
-        void Pressed106(ZonesBoolInputSigDelegate callback);
-        void Pressed107(ZonesBoolInputSigDelegate callback);
-        void Pressed108(ZonesBoolInputSigDelegate callback);
-        void Pressed109(ZonesBoolInputSigDelegate callback);
-        void Pressed110(ZonesBoolInputSigDelegate callback);
-        void Pressed111(ZonesBoolInputSigDelegate callback);
-        void Pressed112(ZonesBoolInputSigDelegate callback);
-        void Pressed113(ZonesBoolInputSigDelegate callback);
-        void Pressed114(ZonesBoolInputSigDelegate callback);
-        void Pressed115(ZonesBoolInputSigDelegate callback);
-        void Pressed116(ZonesBoolInputSigDelegate callback);
-        void Pressed117(ZonesBoolInputSigDelegate callback);
-        void Pressed118(ZonesBoolInputSigDelegate callback);
-        void Pressed119(ZonesBoolInputSigDelegate callback);
-        void Pressed120(ZonesBoolInputSigDelegate callback);
-        void Pressed121(ZonesBoolInputSigDelegate callback);
-        void Pressed122(ZonesBoolInputSigDelegate callback);
-        void Pressed123(ZonesBoolInputSigDelegate callback);
-        void Pressed124(ZonesBoolInputSigDelegate callback);
-        void Pressed125(ZonesBoolInputSigDelegate callback);
-        void Pressed126(ZonesBoolInputSigDelegate callback);
-        void Pressed127(ZonesBoolInputSigDelegate callback);
-        void Pressed128(ZonesBoolInputSigDelegate callback);
-        void Pressed129(ZonesBoolInputSigDelegate callback);
-        void Pressed130(ZonesBoolInputSigDelegate callback);
-        void Pressed131(ZonesBoolInputSigDelegate callback);
-        void Pressed132(ZonesBoolInputSigDelegate callback);
-        void Pressed133(ZonesBoolInputSigDelegate callback);
-        void Pressed134(ZonesBoolInputSigDelegate callback);
-        void Pressed135(ZonesBoolInputSigDelegate callback);
-        void Pressed136(ZonesBoolInputSigDelegate callback);
-        void Pressed137(ZonesBoolInputSigDelegate callback);
-        void Pressed138(ZonesBoolInputSigDelegate callback);
-        void Pressed139(ZonesBoolInputSigDelegate callback);
-        void Pressed140(ZonesBoolInputSigDelegate callback);
-        void Pressed141(ZonesBoolInputSigDelegate callback);
-        void Pressed142(ZonesBoolInputSigDelegate callback);
-        void Pressed143(ZonesBoolInputSigDelegate callback);
-        void Pressed144(ZonesBoolInputSigDelegate callback);
-        void Pressed145(ZonesBoolInputSigDelegate callback);
-        void Pressed146(ZonesBoolInputSigDelegate callback);
-        void Pressed147(ZonesBoolInputSigDelegate callback);
-        void Pressed148(ZonesBoolInputSigDelegate callback);
-        void Pressed149(ZonesBoolInputSigDelegate callback);
-        void Pressed150(ZonesBoolInputSigDelegate callback);
-        void Pressed151(ZonesBoolInputSigDelegate callback);
-        void Pressed152(ZonesBoolInputSigDelegate callback);
-        void Pressed153(ZonesBoolInputSigDelegate callback);
-        void Pressed154(ZonesBoolInputSigDelegate callback);
-        void Pressed155(ZonesBoolInputSigDelegate callback);
-        void Pressed156(ZonesBoolInputSigDelegate callback);
-        void Pressed157(ZonesBoolInputSigDelegate callback);
-        void Pressed158(ZonesBoolInputSigDelegate callback);
-        void Pressed159(ZonesBoolInputSigDelegate callback);
-        void Pressed160(ZonesBoolInputSigDelegate callback);
-        void Pressed161(ZonesBoolInputSigDelegate callback);
-        void Pressed162(ZonesBoolInputSigDelegate callback);
-        void Pressed163(ZonesBoolInputSigDelegate callback);
-        void Pressed164(ZonesBoolInputSigDelegate callback);
-        void Pressed165(ZonesBoolInputSigDelegate callback);
-        void Pressed166(ZonesBoolInputSigDelegate callback);
-        void Pressed167(ZonesBoolInputSigDelegate callback);
-        void Pressed168(ZonesBoolInputSigDelegate callback);
-        void Pressed169(ZonesBoolInputSigDelegate callback);
-        void Pressed170(ZonesBoolInputSigDelegate callback);
-        void Pressed171(ZonesBoolInputSigDelegate callback);
-        void Pressed172(ZonesBoolInputSigDelegate callback);
-        void Pressed173(ZonesBoolInputSigDelegate callback);
-        void Pressed174(ZonesBoolInputSigDelegate callback);
-        void Pressed175(ZonesBoolInputSigDelegate callback);
-        void Pressed176(ZonesBoolInputSigDelegate callback);
-        void Pressed177(ZonesBoolInputSigDelegate callback);
-        void Pressed178(ZonesBoolInputSigDelegate callback);
-        void Pressed179(ZonesBoolInputSigDelegate callback);
-        void Pressed180(ZonesBoolInputSigDelegate callback);
-        void Pressed181(ZonesBoolInputSigDelegate callback);
-        void Pressed182(ZonesBoolInputSigDelegate callback);
-        void Pressed183(ZonesBoolInputSigDelegate callback);
-        void Pressed184(ZonesBoolInputSigDelegate callback);
-        void Pressed185(ZonesBoolInputSigDelegate callback);
-        void Pressed186(ZonesBoolInputSigDelegate callback);
-        void Pressed187(ZonesBoolInputSigDelegate callback);
-        void Pressed188(ZonesBoolInputSigDelegate callback);
-        void Pressed189(ZonesBoolInputSigDelegate callback);
-        void Pressed190(ZonesBoolInputSigDelegate callback);
-        void Pressed191(ZonesBoolInputSigDelegate callback);
-        void Pressed192(ZonesBoolInputSigDelegate callback);
-        void Pressed193(ZonesBoolInputSigDelegate callback);
-        void Pressed194(ZonesBoolInputSigDelegate callback);
-        void Pressed195(ZonesBoolInputSigDelegate callback);
-        void Pressed196(ZonesBoolInputSigDelegate callback);
-        void Pressed197(ZonesBoolInputSigDelegate callback);
-        void Pressed198(ZonesBoolInputSigDelegate callback);
-        void Pressed199(ZonesBoolInputSigDelegate callback);
-        void Pressed200(ZonesBoolInputSigDelegate callback);
-        void Pressed201(ZonesBoolInputSigDelegate callback);
-        void Pressed202(ZonesBoolInputSigDelegate callback);
-        void Pressed203(ZonesBoolInputSigDelegate callback);
-        void Pressed204(ZonesBoolInputSigDelegate callback);
-        void Pressed205(ZonesBoolInputSigDelegate callback);
-        void Pressed206(ZonesBoolInputSigDelegate callback);
-        void Pressed207(ZonesBoolInputSigDelegate callback);
-        void Pressed208(ZonesBoolInputSigDelegate callback);
-        void Pressed209(ZonesBoolInputSigDelegate callback);
-        void Pressed210(ZonesBoolInputSigDelegate callback);
-        void Pressed211(ZonesBoolInputSigDelegate callback);
-        void Pressed212(ZonesBoolInputSigDelegate callback);
-        void Pressed213(ZonesBoolInputSigDelegate callback);
-        void Pressed214(ZonesBoolInputSigDelegate callback);
-        void Pressed215(ZonesBoolInputSigDelegate callback);
-        void Pressed216(ZonesBoolInputSigDelegate callback);
-        void Pressed217(ZonesBoolInputSigDelegate callback);
-        void Pressed218(ZonesBoolInputSigDelegate callback);
-        void Pressed219(ZonesBoolInputSigDelegate callback);
-        void Pressed220(ZonesBoolInputSigDelegate callback);
-        void Pressed221(ZonesBoolInputSigDelegate callback);
-        void Pressed222(ZonesBoolInputSigDelegate callback);
-        void Pressed223(ZonesBoolInputSigDelegate callback);
-        void Pressed224(ZonesBoolInputSigDelegate callback);
-        void Pressed225(ZonesBoolInputSigDelegate callback);
-        void Pressed226(ZonesBoolInputSigDelegate callback);
-        void Pressed227(ZonesBoolInputSigDelegate callback);
-        void Pressed228(ZonesBoolInputSigDelegate callback);
-        void Pressed229(ZonesBoolInputSigDelegate callback);
-        void Pressed230(ZonesBoolInputSigDelegate callback);
-        void Pressed231(ZonesBoolInputSigDelegate callback);
-        void Pressed232(ZonesBoolInputSigDelegate callback);
-        void Pressed233(ZonesBoolInputSigDelegate callback);
-        void Pressed234(ZonesBoolInputSigDelegate callback);
-        void Pressed235(ZonesBoolInputSigDelegate callback);
-        void Pressed236(ZonesBoolInputSigDelegate callback);
-        void Pressed237(ZonesBoolInputSigDelegate callback);
-        void Pressed238(ZonesBoolInputSigDelegate callback);
-        void Pressed239(ZonesBoolInputSigDelegate callback);
-        void Pressed240(ZonesBoolInputSigDelegate callback);
-        void Pressed241(ZonesBoolInputSigDelegate callback);
-        void Pressed242(ZonesBoolInputSigDelegate callback);
-        void Pressed243(ZonesBoolInputSigDelegate callback);
-        void Pressed244(ZonesBoolInputSigDelegate callback);
-        void Pressed245(ZonesBoolInputSigDelegate callback);
-        void Pressed246(ZonesBoolInputSigDelegate callback);
-        void Pressed247(ZonesBoolInputSigDelegate callback);
-        void Pressed248(ZonesBoolInputSigDelegate callback);
-        void Pressed249(ZonesBoolInputSigDelegate callback);
-        void Pressed0(ZonesBoolInputSigDelegate callback);
-        void Zone1(ZonesStringInputSigDelegate callback);
-        void Zone2(ZonesStringInputSigDelegate callback);
-        void Zone3(ZonesStringInputSigDelegate callback);
-        void Zone4(ZonesStringInputSigDelegate callback);
-        void Zone5(ZonesStringInputSigDelegate callback);
-        void Zone6(ZonesStringInputSigDelegate callback);
-        void Zone7(ZonesStringInputSigDelegate callback);
-        void Zone8(ZonesStringInputSigDelegate callback);
-        void Zone9(ZonesStringInputSigDelegate callback);
-        void Zone10(ZonesStringInputSigDelegate callback);
-        void Zone11(ZonesStringInputSigDelegate callback);
-        void Zone12(ZonesStringInputSigDelegate callback);
-        void Zone13(ZonesStringInputSigDelegate callback);
-        void Zone14(ZonesStringInputSigDelegate callback);
-        void Zone15(ZonesStringInputSigDelegate callback);
-        void Zone16(ZonesStringInputSigDelegate callback);
-        void Zone17(ZonesStringInputSigDelegate callback);
-        void Zone18(ZonesStringInputSigDelegate callback);
-        void Zone19(ZonesStringInputSigDelegate callback);
-        void Zone20(ZonesStringInputSigDelegate callback);
-        void Zone21(ZonesStringInputSigDelegate callback);
-        void Zone22(ZonesStringInputSigDelegate callback);
-        void Zone23(ZonesStringInputSigDelegate callback);
-        void Zone24(ZonesStringInputSigDelegate callback);
-        void Zone25(ZonesStringInputSigDelegate callback);
-        void Zone26(ZonesStringInputSigDelegate callback);
-        void Zone27(ZonesStringInputSigDelegate callback);
-        void Zone28(ZonesStringInputSigDelegate callback);
-        void Zone29(ZonesStringInputSigDelegate callback);
-        void Zone30(ZonesStringInputSigDelegate callback);
-        void Zone31(ZonesStringInputSigDelegate callback);
-        void Zone32(ZonesStringInputSigDelegate callback);
-        void Zone33(ZonesStringInputSigDelegate callback);
-        void Zone34(ZonesStringInputSigDelegate callback);
-        void Zone35(ZonesStringInputSigDelegate callback);
-        void Zone36(ZonesStringInputSigDelegate callback);
-        void Zone37(ZonesStringInputSigDelegate callback);
-        void Zone38(ZonesStringInputSigDelegate callback);
-        void Zone39(ZonesStringInputSigDelegate callback);
-        void Zone40(ZonesStringInputSigDelegate callback);
-        void Zone41(ZonesStringInputSigDelegate callback);
-        void Zone42(ZonesStringInputSigDelegate callback);
-        void Zone43(ZonesStringInputSigDelegate callback);
-        void Zone44(ZonesStringInputSigDelegate callback);
-        void Zone45(ZonesStringInputSigDelegate callback);
-        void Zone46(ZonesStringInputSigDelegate callback);
-        void Zone47(ZonesStringInputSigDelegate callback);
-        void Zone48(ZonesStringInputSigDelegate callback);
-        void Zone49(ZonesStringInputSigDelegate callback);
-        void Zone50(ZonesStringInputSigDelegate callback);
-        void Zone51(ZonesStringInputSigDelegate callback);
-        void Zone52(ZonesStringInputSigDelegate callback);
-        void Zone53(ZonesStringInputSigDelegate callback);
-        void Zone54(ZonesStringInputSigDelegate callback);
-        void Zone55(ZonesStringInputSigDelegate callback);
-        void Zone56(ZonesStringInputSigDelegate callback);
-        void Zone57(ZonesStringInputSigDelegate callback);
-        void Zone58(ZonesStringInputSigDelegate callback);
-        void Zone59(ZonesStringInputSigDelegate callback);
-        void Zone60(ZonesStringInputSigDelegate callback);
-        void Zone61(ZonesStringInputSigDelegate callback);
-        void Zone62(ZonesStringInputSigDelegate callback);
-        void Zone63(ZonesStringInputSigDelegate callback);
-        void Zone64(ZonesStringInputSigDelegate callback);
-        void Zone65(ZonesStringInputSigDelegate callback);
-        void Zone66(ZonesStringInputSigDelegate callback);
-        void Zone67(ZonesStringInputSigDelegate callback);
-        void Zone68(ZonesStringInputSigDelegate callback);
-        void Zone69(ZonesStringInputSigDelegate callback);
-        void Zone70(ZonesStringInputSigDelegate callback);
-        void Zone71(ZonesStringInputSigDelegate callback);
-        void Zone72(ZonesStringInputSigDelegate callback);
-        void Zone73(ZonesStringInputSigDelegate callback);
-        void Zone74(ZonesStringInputSigDelegate callback);
-        void Zone75(ZonesStringInputSigDelegate callback);
-        void Zone76(ZonesStringInputSigDelegate callback);
-        void Zone77(ZonesStringInputSigDelegate callback);
-        void Zone78(ZonesStringInputSigDelegate callback);
-        void Zone79(ZonesStringInputSigDelegate callback);
-        void Zone80(ZonesStringInputSigDelegate callback);
-        void Zone81(ZonesStringInputSigDelegate callback);
-        void Zone82(ZonesStringInputSigDelegate callback);
-        void Zone83(ZonesStringInputSigDelegate callback);
-        void Zone84(ZonesStringInputSigDelegate callback);
-        void Zone85(ZonesStringInputSigDelegate callback);
-        void Zone86(ZonesStringInputSigDelegate callback);
-        void Zone87(ZonesStringInputSigDelegate callback);
-        void Zone88(ZonesStringInputSigDelegate callback);
-        void Zone89(ZonesStringInputSigDelegate callback);
-        void Zone90(ZonesStringInputSigDelegate callback);
-        void Zone91(ZonesStringInputSigDelegate callback);
-        void Zone92(ZonesStringInputSigDelegate callback);
-        void Zone93(ZonesStringInputSigDelegate callback);
-        void Zone94(ZonesStringInputSigDelegate callback);
-        void Zone95(ZonesStringInputSigDelegate callback);
-        void Zone96(ZonesStringInputSigDelegate callback);
-        void Zone97(ZonesStringInputSigDelegate callback);
-        void Zone98(ZonesStringInputSigDelegate callback);
-        void Zone99(ZonesStringInputSigDelegate callback);
-        void Zone100(ZonesStringInputSigDelegate callback);
-        void Zone101(ZonesStringInputSigDelegate callback);
-        void Zone102(ZonesStringInputSigDelegate callback);
-        void Zone103(ZonesStringInputSigDelegate callback);
-        void Zone104(ZonesStringInputSigDelegate callback);
-        void Zone105(ZonesStringInputSigDelegate callback);
-        void Zone106(ZonesStringInputSigDelegate callback);
-        void Zone107(ZonesStringInputSigDelegate callback);
-        void Zone108(ZonesStringInputSigDelegate callback);
-        void Zone109(ZonesStringInputSigDelegate callback);
-        void Zone110(ZonesStringInputSigDelegate callback);
-        void Zone111(ZonesStringInputSigDelegate callback);
-        void Zone112(ZonesStringInputSigDelegate callback);
-        void Zone113(ZonesStringInputSigDelegate callback);
-        void Zone114(ZonesStringInputSigDelegate callback);
-        void Zone115(ZonesStringInputSigDelegate callback);
-        void Zone116(ZonesStringInputSigDelegate callback);
-        void Zone117(ZonesStringInputSigDelegate callback);
-        void Zone118(ZonesStringInputSigDelegate callback);
-        void Zone119(ZonesStringInputSigDelegate callback);
-        void Zone120(ZonesStringInputSigDelegate callback);
-        void Zone121(ZonesStringInputSigDelegate callback);
-        void Zone122(ZonesStringInputSigDelegate callback);
-        void Zone123(ZonesStringInputSigDelegate callback);
-        void Zone124(ZonesStringInputSigDelegate callback);
-        void Zone125(ZonesStringInputSigDelegate callback);
-        void Zone126(ZonesStringInputSigDelegate callback);
-        void Zone127(ZonesStringInputSigDelegate callback);
-        void Zone128(ZonesStringInputSigDelegate callback);
-        void Zone129(ZonesStringInputSigDelegate callback);
-        void Zone130(ZonesStringInputSigDelegate callback);
-        void Zone131(ZonesStringInputSigDelegate callback);
-        void Zone132(ZonesStringInputSigDelegate callback);
-        void Zone133(ZonesStringInputSigDelegate callback);
-        void Zone134(ZonesStringInputSigDelegate callback);
-        void Zone135(ZonesStringInputSigDelegate callback);
-        void Zone136(ZonesStringInputSigDelegate callback);
-        void Zone137(ZonesStringInputSigDelegate callback);
-        void Zone138(ZonesStringInputSigDelegate callback);
-        void Zone139(ZonesStringInputSigDelegate callback);
-        void Zone140(ZonesStringInputSigDelegate callback);
-        void Zone141(ZonesStringInputSigDelegate callback);
-        void Zone142(ZonesStringInputSigDelegate callback);
-        void Zone143(ZonesStringInputSigDelegate callback);
-        void Zone144(ZonesStringInputSigDelegate callback);
-        void Zone145(ZonesStringInputSigDelegate callback);
-        void Zone146(ZonesStringInputSigDelegate callback);
-        void Zone147(ZonesStringInputSigDelegate callback);
-        void Zone148(ZonesStringInputSigDelegate callback);
-        void Zone149(ZonesStringInputSigDelegate callback);
-        void Zone150(ZonesStringInputSigDelegate callback);
-        void Zone151(ZonesStringInputSigDelegate callback);
-        void Zone152(ZonesStringInputSigDelegate callback);
-        void Zone153(ZonesStringInputSigDelegate callback);
-        void Zone154(ZonesStringInputSigDelegate callback);
-        void Zone155(ZonesStringInputSigDelegate callback);
-        void Zone156(ZonesStringInputSigDelegate callback);
-        void Zone157(ZonesStringInputSigDelegate callback);
-        void Zone158(ZonesStringInputSigDelegate callback);
-        void Zone159(ZonesStringInputSigDelegate callback);
-        void Zone160(ZonesStringInputSigDelegate callback);
-        void Zone161(ZonesStringInputSigDelegate callback);
-        void Zone162(ZonesStringInputSigDelegate callback);
-        void Zone163(ZonesStringInputSigDelegate callback);
-        void Zone164(ZonesStringInputSigDelegate callback);
-        void Zone165(ZonesStringInputSigDelegate callback);
-        void Zone166(ZonesStringInputSigDelegate callback);
-        void Zone167(ZonesStringInputSigDelegate callback);
-        void Zone168(ZonesStringInputSigDelegate callback);
-        void Zone169(ZonesStringInputSigDelegate callback);
-        void Zone170(ZonesStringInputSigDelegate callback);
-        void Zone171(ZonesStringInputSigDelegate callback);
-        void Zone172(ZonesStringInputSigDelegate callback);
-        void Zone173(ZonesStringInputSigDelegate callback);
-        void Zone174(ZonesStringInputSigDelegate callback);
-        void Zone175(ZonesStringInputSigDelegate callback);
-        void Zone176(ZonesStringInputSigDelegate callback);
-        void Zone177(ZonesStringInputSigDelegate callback);
-        void Zone178(ZonesStringInputSigDelegate callback);
-        void Zone179(ZonesStringInputSigDelegate callback);
-        void Zone180(ZonesStringInputSigDelegate callback);
-        void Zone181(ZonesStringInputSigDelegate callback);
-        void Zone182(ZonesStringInputSigDelegate callback);
-        void Zone183(ZonesStringInputSigDelegate callback);
-        void Zone184(ZonesStringInputSigDelegate callback);
-        void Zone185(ZonesStringInputSigDelegate callback);
-        void Zone186(ZonesStringInputSigDelegate callback);
-        void Zone187(ZonesStringInputSigDelegate callback);
-        void Zone188(ZonesStringInputSigDelegate callback);
-        void Zone189(ZonesStringInputSigDelegate callback);
-        void Zone190(ZonesStringInputSigDelegate callback);
-        void Zone191(ZonesStringInputSigDelegate callback);
-        void Zone192(ZonesStringInputSigDelegate callback);
-        void Zone193(ZonesStringInputSigDelegate callback);
-        void Zone194(ZonesStringInputSigDelegate callback);
-        void Zone195(ZonesStringInputSigDelegate callback);
-        void Zone196(ZonesStringInputSigDelegate callback);
-        void Zone197(ZonesStringInputSigDelegate callback);
-        void Zone198(ZonesStringInputSigDelegate callback);
-        void Zone199(ZonesStringInputSigDelegate callback);
-        void Zone200(ZonesStringInputSigDelegate callback);
-        void Zone201(ZonesStringInputSigDelegate callback);
-        void Zone202(ZonesStringInputSigDelegate callback);
-        void Zone203(ZonesStringInputSigDelegate callback);
-        void Zone204(ZonesStringInputSigDelegate callback);
-        void Zone205(ZonesStringInputSigDelegate callback);
-        void Zone206(ZonesStringInputSigDelegate callback);
-        void Zone207(ZonesStringInputSigDelegate callback);
-        void Zone208(ZonesStringInputSigDelegate callback);
-        void Zone209(ZonesStringInputSigDelegate callback);
-        void Zone210(ZonesStringInputSigDelegate callback);
-        void Zone211(ZonesStringInputSigDelegate callback);
-        void Zone212(ZonesStringInputSigDelegate callback);
-        void Zone213(ZonesStringInputSigDelegate callback);
-        void Zone214(ZonesStringInputSigDelegate callback);
-        void Zone215(ZonesStringInputSigDelegate callback);
-        void Zone216(ZonesStringInputSigDelegate callback);
-        void Zone217(ZonesStringInputSigDelegate callback);
-        void Zone218(ZonesStringInputSigDelegate callback);
-        void Zone219(ZonesStringInputSigDelegate callback);
-        void Zone220(ZonesStringInputSigDelegate callback);
-        void Zone221(ZonesStringInputSigDelegate callback);
-        void Zone222(ZonesStringInputSigDelegate callback);
-        void Zone223(ZonesStringInputSigDelegate callback);
-        void Zone224(ZonesStringInputSigDelegate callback);
-        void Zone225(ZonesStringInputSigDelegate callback);
-        void Zone226(ZonesStringInputSigDelegate callback);
-        void Zone227(ZonesStringInputSigDelegate callback);
-        void Zone228(ZonesStringInputSigDelegate callback);
-        void Zone229(ZonesStringInputSigDelegate callback);
-        void Zone230(ZonesStringInputSigDelegate callback);
-        void Zone231(ZonesStringInputSigDelegate callback);
-        void Zone232(ZonesStringInputSigDelegate callback);
-        void Zone233(ZonesStringInputSigDelegate callback);
-        void Zone234(ZonesStringInputSigDelegate callback);
-        void Zone235(ZonesStringInputSigDelegate callback);
-        void Zone236(ZonesStringInputSigDelegate callback);
-        void Zone237(ZonesStringInputSigDelegate callback);
-        void Zone238(ZonesStringInputSigDelegate callback);
-        void Zone239(ZonesStringInputSigDelegate callback);
-        void Zone240(ZonesStringInputSigDelegate callback);
-        void Zone241(ZonesStringInputSigDelegate callback);
-        void Zone242(ZonesStringInputSigDelegate callback);
-        void Zone243(ZonesStringInputSigDelegate callback);
-        void Zone244(ZonesStringInputSigDelegate callback);
-        void Zone245(ZonesStringInputSigDelegate callback);
-        void Zone246(ZonesStringInputSigDelegate callback);
-        void Zone247(ZonesStringInputSigDelegate callback);
-        void Zone248(ZonesStringInputSigDelegate callback);
-        void Zone249(ZonesStringInputSigDelegate callback);
-        void Zone0(ZonesStringInputSigDelegate callback);
+        void Pressed0(LoadsBoolInputSigDelegate callback);
+        void Pressed1(LoadsBoolInputSigDelegate callback);
+        void Pressed2(LoadsBoolInputSigDelegate callback);
+        void Pressed3(LoadsBoolInputSigDelegate callback);
+        void Pressed4(LoadsBoolInputSigDelegate callback);
+        void Pressed5(LoadsBoolInputSigDelegate callback);
+        void Pressed6(LoadsBoolInputSigDelegate callback);
+        void Pressed7(LoadsBoolInputSigDelegate callback);
+        void Pressed8(LoadsBoolInputSigDelegate callback);
+        void Pressed9(LoadsBoolInputSigDelegate callback);
+        void Pressed10(LoadsBoolInputSigDelegate callback);
+        void Pressed11(LoadsBoolInputSigDelegate callback);
+        void Pressed12(LoadsBoolInputSigDelegate callback);
+        void Pressed13(LoadsBoolInputSigDelegate callback);
+        void Pressed14(LoadsBoolInputSigDelegate callback);
+        void Pressed15(LoadsBoolInputSigDelegate callback);
+        void Pressed16(LoadsBoolInputSigDelegate callback);
+        void Pressed17(LoadsBoolInputSigDelegate callback);
+        void Pressed18(LoadsBoolInputSigDelegate callback);
+        void Pressed19(LoadsBoolInputSigDelegate callback);
+        void Pressed20(LoadsBoolInputSigDelegate callback);
+        void Pressed21(LoadsBoolInputSigDelegate callback);
+        void Pressed22(LoadsBoolInputSigDelegate callback);
+        void Pressed23(LoadsBoolInputSigDelegate callback);
+        void Pressed24(LoadsBoolInputSigDelegate callback);
+        void Pressed25(LoadsBoolInputSigDelegate callback);
+        void Pressed26(LoadsBoolInputSigDelegate callback);
+        void Pressed27(LoadsBoolInputSigDelegate callback);
+        void Pressed28(LoadsBoolInputSigDelegate callback);
+        void Pressed29(LoadsBoolInputSigDelegate callback);
+        void Pressed30(LoadsBoolInputSigDelegate callback);
+        void Pressed31(LoadsBoolInputSigDelegate callback);
+        void Pressed32(LoadsBoolInputSigDelegate callback);
+        void Pressed33(LoadsBoolInputSigDelegate callback);
+        void Pressed34(LoadsBoolInputSigDelegate callback);
+        void Pressed35(LoadsBoolInputSigDelegate callback);
+        void Pressed36(LoadsBoolInputSigDelegate callback);
+        void Pressed37(LoadsBoolInputSigDelegate callback);
+        void Pressed38(LoadsBoolInputSigDelegate callback);
+        void Pressed39(LoadsBoolInputSigDelegate callback);
+        void Pressed40(LoadsBoolInputSigDelegate callback);
+        void Pressed41(LoadsBoolInputSigDelegate callback);
+        void Pressed42(LoadsBoolInputSigDelegate callback);
+        void Pressed43(LoadsBoolInputSigDelegate callback);
+        void Pressed44(LoadsBoolInputSigDelegate callback);
+        void Pressed45(LoadsBoolInputSigDelegate callback);
+        void Pressed46(LoadsBoolInputSigDelegate callback);
+        void Pressed47(LoadsBoolInputSigDelegate callback);
+        void Pressed48(LoadsBoolInputSigDelegate callback);
+        void Pressed49(LoadsBoolInputSigDelegate callback);
+        void Pressed50(LoadsBoolInputSigDelegate callback);
+        void Pressed51(LoadsBoolInputSigDelegate callback);
+        void Pressed52(LoadsBoolInputSigDelegate callback);
+        void Pressed53(LoadsBoolInputSigDelegate callback);
+        void Pressed54(LoadsBoolInputSigDelegate callback);
+        void Pressed55(LoadsBoolInputSigDelegate callback);
+        void Pressed56(LoadsBoolInputSigDelegate callback);
+        void Pressed57(LoadsBoolInputSigDelegate callback);
+        void Pressed58(LoadsBoolInputSigDelegate callback);
+        void Pressed59(LoadsBoolInputSigDelegate callback);
+        void Pressed60(LoadsBoolInputSigDelegate callback);
+        void Pressed61(LoadsBoolInputSigDelegate callback);
+        void Pressed62(LoadsBoolInputSigDelegate callback);
+        void Pressed63(LoadsBoolInputSigDelegate callback);
+        void Pressed64(LoadsBoolInputSigDelegate callback);
+        void Pressed65(LoadsBoolInputSigDelegate callback);
+        void Pressed66(LoadsBoolInputSigDelegate callback);
+        void Pressed67(LoadsBoolInputSigDelegate callback);
+        void Pressed68(LoadsBoolInputSigDelegate callback);
+        void Pressed69(LoadsBoolInputSigDelegate callback);
+        void Pressed70(LoadsBoolInputSigDelegate callback);
+        void Pressed71(LoadsBoolInputSigDelegate callback);
+        void Pressed72(LoadsBoolInputSigDelegate callback);
+        void Pressed73(LoadsBoolInputSigDelegate callback);
+        void Pressed74(LoadsBoolInputSigDelegate callback);
+        void Pressed75(LoadsBoolInputSigDelegate callback);
+        void Pressed76(LoadsBoolInputSigDelegate callback);
+        void Pressed77(LoadsBoolInputSigDelegate callback);
+        void Pressed78(LoadsBoolInputSigDelegate callback);
+        void Pressed79(LoadsBoolInputSigDelegate callback);
+        void Pressed80(LoadsBoolInputSigDelegate callback);
+        void Pressed81(LoadsBoolInputSigDelegate callback);
+        void Pressed82(LoadsBoolInputSigDelegate callback);
+        void Pressed83(LoadsBoolInputSigDelegate callback);
+        void Pressed84(LoadsBoolInputSigDelegate callback);
+        void Pressed85(LoadsBoolInputSigDelegate callback);
+        void Pressed86(LoadsBoolInputSigDelegate callback);
+        void Pressed87(LoadsBoolInputSigDelegate callback);
+        void Pressed88(LoadsBoolInputSigDelegate callback);
+        void Pressed89(LoadsBoolInputSigDelegate callback);
+        void Pressed90(LoadsBoolInputSigDelegate callback);
+        void Pressed91(LoadsBoolInputSigDelegate callback);
+        void Pressed92(LoadsBoolInputSigDelegate callback);
+        void Pressed93(LoadsBoolInputSigDelegate callback);
+        void Pressed94(LoadsBoolInputSigDelegate callback);
+        void Pressed95(LoadsBoolInputSigDelegate callback);
+        void Pressed96(LoadsBoolInputSigDelegate callback);
+        void Pressed97(LoadsBoolInputSigDelegate callback);
+        void Pressed98(LoadsBoolInputSigDelegate callback);
+        void Pressed99(LoadsBoolInputSigDelegate callback);
+        void Pressed100(LoadsBoolInputSigDelegate callback);
+        void Pressed101(LoadsBoolInputSigDelegate callback);
+        void Pressed102(LoadsBoolInputSigDelegate callback);
+        void Pressed103(LoadsBoolInputSigDelegate callback);
+        void Pressed104(LoadsBoolInputSigDelegate callback);
+        void Pressed105(LoadsBoolInputSigDelegate callback);
+        void Pressed106(LoadsBoolInputSigDelegate callback);
+        void Pressed107(LoadsBoolInputSigDelegate callback);
+        void Pressed108(LoadsBoolInputSigDelegate callback);
+        void Pressed109(LoadsBoolInputSigDelegate callback);
+        void Pressed110(LoadsBoolInputSigDelegate callback);
+        void Pressed111(LoadsBoolInputSigDelegate callback);
+        void Pressed112(LoadsBoolInputSigDelegate callback);
+        void Pressed113(LoadsBoolInputSigDelegate callback);
+        void Pressed114(LoadsBoolInputSigDelegate callback);
+        void Pressed115(LoadsBoolInputSigDelegate callback);
+        void Pressed116(LoadsBoolInputSigDelegate callback);
+        void Pressed117(LoadsBoolInputSigDelegate callback);
+        void Pressed118(LoadsBoolInputSigDelegate callback);
+        void Pressed119(LoadsBoolInputSigDelegate callback);
+        void Pressed120(LoadsBoolInputSigDelegate callback);
+        void Pressed121(LoadsBoolInputSigDelegate callback);
+        void Pressed122(LoadsBoolInputSigDelegate callback);
+        void Pressed123(LoadsBoolInputSigDelegate callback);
+        void Pressed124(LoadsBoolInputSigDelegate callback);
+        void Pressed125(LoadsBoolInputSigDelegate callback);
+        void Pressed126(LoadsBoolInputSigDelegate callback);
+        void Pressed127(LoadsBoolInputSigDelegate callback);
+        void Pressed128(LoadsBoolInputSigDelegate callback);
+        void Pressed129(LoadsBoolInputSigDelegate callback);
+        void Pressed130(LoadsBoolInputSigDelegate callback);
+        void Pressed131(LoadsBoolInputSigDelegate callback);
+        void Pressed132(LoadsBoolInputSigDelegate callback);
+        void Pressed133(LoadsBoolInputSigDelegate callback);
+        void Pressed134(LoadsBoolInputSigDelegate callback);
+        void Pressed135(LoadsBoolInputSigDelegate callback);
+        void Pressed136(LoadsBoolInputSigDelegate callback);
+        void Pressed137(LoadsBoolInputSigDelegate callback);
+        void Pressed138(LoadsBoolInputSigDelegate callback);
+        void Pressed139(LoadsBoolInputSigDelegate callback);
+        void Pressed140(LoadsBoolInputSigDelegate callback);
+        void Pressed141(LoadsBoolInputSigDelegate callback);
+        void Pressed142(LoadsBoolInputSigDelegate callback);
+        void Pressed143(LoadsBoolInputSigDelegate callback);
+        void Pressed144(LoadsBoolInputSigDelegate callback);
+        void Pressed145(LoadsBoolInputSigDelegate callback);
+        void Pressed146(LoadsBoolInputSigDelegate callback);
+        void Pressed147(LoadsBoolInputSigDelegate callback);
+        void Pressed148(LoadsBoolInputSigDelegate callback);
+        void Pressed149(LoadsBoolInputSigDelegate callback);
+        void Pressed150(LoadsBoolInputSigDelegate callback);
+        void Pressed151(LoadsBoolInputSigDelegate callback);
+        void Pressed152(LoadsBoolInputSigDelegate callback);
+        void Pressed153(LoadsBoolInputSigDelegate callback);
+        void Pressed154(LoadsBoolInputSigDelegate callback);
+        void Pressed155(LoadsBoolInputSigDelegate callback);
+        void Pressed156(LoadsBoolInputSigDelegate callback);
+        void Pressed157(LoadsBoolInputSigDelegate callback);
+        void Pressed158(LoadsBoolInputSigDelegate callback);
+        void Pressed159(LoadsBoolInputSigDelegate callback);
+        void Pressed160(LoadsBoolInputSigDelegate callback);
+        void Pressed161(LoadsBoolInputSigDelegate callback);
+        void Pressed162(LoadsBoolInputSigDelegate callback);
+        void Pressed163(LoadsBoolInputSigDelegate callback);
+        void Pressed164(LoadsBoolInputSigDelegate callback);
+        void Pressed165(LoadsBoolInputSigDelegate callback);
+        void Pressed166(LoadsBoolInputSigDelegate callback);
+        void Pressed167(LoadsBoolInputSigDelegate callback);
+        void Pressed168(LoadsBoolInputSigDelegate callback);
+        void Pressed169(LoadsBoolInputSigDelegate callback);
+        void Pressed170(LoadsBoolInputSigDelegate callback);
+        void Pressed171(LoadsBoolInputSigDelegate callback);
+        void Pressed172(LoadsBoolInputSigDelegate callback);
+        void Pressed173(LoadsBoolInputSigDelegate callback);
+        void Pressed174(LoadsBoolInputSigDelegate callback);
+        void Pressed175(LoadsBoolInputSigDelegate callback);
+        void Pressed176(LoadsBoolInputSigDelegate callback);
+        void Pressed177(LoadsBoolInputSigDelegate callback);
+        void Pressed178(LoadsBoolInputSigDelegate callback);
+        void Pressed179(LoadsBoolInputSigDelegate callback);
+        void Pressed180(LoadsBoolInputSigDelegate callback);
+        void Pressed181(LoadsBoolInputSigDelegate callback);
+        void Pressed182(LoadsBoolInputSigDelegate callback);
+        void Pressed183(LoadsBoolInputSigDelegate callback);
+        void Pressed184(LoadsBoolInputSigDelegate callback);
+        void Pressed185(LoadsBoolInputSigDelegate callback);
+        void Pressed186(LoadsBoolInputSigDelegate callback);
+        void Pressed187(LoadsBoolInputSigDelegate callback);
+        void Pressed188(LoadsBoolInputSigDelegate callback);
+        void Pressed189(LoadsBoolInputSigDelegate callback);
+        void Pressed190(LoadsBoolInputSigDelegate callback);
+        void Pressed191(LoadsBoolInputSigDelegate callback);
+        void Pressed192(LoadsBoolInputSigDelegate callback);
+        void Pressed193(LoadsBoolInputSigDelegate callback);
+        void Pressed194(LoadsBoolInputSigDelegate callback);
+        void Pressed195(LoadsBoolInputSigDelegate callback);
+        void Pressed196(LoadsBoolInputSigDelegate callback);
+        void Pressed197(LoadsBoolInputSigDelegate callback);
+        void Pressed198(LoadsBoolInputSigDelegate callback);
+        void Pressed199(LoadsBoolInputSigDelegate callback);
+        void Pressed200(LoadsBoolInputSigDelegate callback);
+        void Pressed201(LoadsBoolInputSigDelegate callback);
+        void Pressed202(LoadsBoolInputSigDelegate callback);
+        void Pressed203(LoadsBoolInputSigDelegate callback);
+        void Pressed204(LoadsBoolInputSigDelegate callback);
+        void Pressed205(LoadsBoolInputSigDelegate callback);
+        void Pressed206(LoadsBoolInputSigDelegate callback);
+        void Pressed207(LoadsBoolInputSigDelegate callback);
+        void Pressed208(LoadsBoolInputSigDelegate callback);
+        void Pressed209(LoadsBoolInputSigDelegate callback);
+        void Pressed210(LoadsBoolInputSigDelegate callback);
+        void Pressed211(LoadsBoolInputSigDelegate callback);
+        void Pressed212(LoadsBoolInputSigDelegate callback);
+        void Pressed213(LoadsBoolInputSigDelegate callback);
+        void Pressed214(LoadsBoolInputSigDelegate callback);
+        void Pressed215(LoadsBoolInputSigDelegate callback);
+        void Pressed216(LoadsBoolInputSigDelegate callback);
+        void Pressed217(LoadsBoolInputSigDelegate callback);
+        void Pressed218(LoadsBoolInputSigDelegate callback);
+        void Pressed219(LoadsBoolInputSigDelegate callback);
+        void Pressed220(LoadsBoolInputSigDelegate callback);
+        void Pressed221(LoadsBoolInputSigDelegate callback);
+        void Pressed222(LoadsBoolInputSigDelegate callback);
+        void Pressed223(LoadsBoolInputSigDelegate callback);
+        void Pressed224(LoadsBoolInputSigDelegate callback);
+        void Pressed225(LoadsBoolInputSigDelegate callback);
+        void Pressed226(LoadsBoolInputSigDelegate callback);
+        void Pressed227(LoadsBoolInputSigDelegate callback);
+        void Pressed228(LoadsBoolInputSigDelegate callback);
+        void Pressed229(LoadsBoolInputSigDelegate callback);
+        void Pressed230(LoadsBoolInputSigDelegate callback);
+        void Pressed231(LoadsBoolInputSigDelegate callback);
+        void Pressed232(LoadsBoolInputSigDelegate callback);
+        void Pressed233(LoadsBoolInputSigDelegate callback);
+        void Pressed234(LoadsBoolInputSigDelegate callback);
+        void Pressed235(LoadsBoolInputSigDelegate callback);
+        void Pressed236(LoadsBoolInputSigDelegate callback);
+        void Pressed237(LoadsBoolInputSigDelegate callback);
+        void Pressed238(LoadsBoolInputSigDelegate callback);
+        void Pressed239(LoadsBoolInputSigDelegate callback);
+        void Pressed240(LoadsBoolInputSigDelegate callback);
+        void Pressed241(LoadsBoolInputSigDelegate callback);
+        void Pressed242(LoadsBoolInputSigDelegate callback);
+        void Pressed243(LoadsBoolInputSigDelegate callback);
+        void Pressed244(LoadsBoolInputSigDelegate callback);
+        void Pressed245(LoadsBoolInputSigDelegate callback);
+        void Pressed246(LoadsBoolInputSigDelegate callback);
+        void Pressed247(LoadsBoolInputSigDelegate callback);
+        void Pressed248(LoadsBoolInputSigDelegate callback);
+        void Pressed249(LoadsBoolInputSigDelegate callback);
+        void Pressed250(LoadsBoolInputSigDelegate callback);
 
     }
 
-    public delegate void ZonesBoolInputSigDelegate(BoolInputSig boolInputSig, IZones zones);
-    public delegate void ZonesStringInputSigDelegate(StringInputSig stringInputSig, IZones zones);
+    public delegate void LoadsBoolInputSigDelegate(BoolInputSig boolInputSig, ILoads loads);
 
-    internal class Zones : IZones, IDisposable
+    internal class Loads : ILoads, IDisposable
     {
         #region Standard CH5 Component members
 
@@ -789,195 +539,195 @@ namespace CBlink
         {
             internal static class Booleans
             {
-                public const uint Press1 = 1;
-                public const uint Press2 = 2;
-                public const uint Press3 = 3;
-                public const uint Press4 = 4;
-                public const uint Press5 = 5;
-                public const uint Press6 = 6;
-                public const uint Press7 = 7;
-                public const uint Press8 = 8;
-                public const uint Press9 = 9;
-                public const uint Press10 = 10;
-                public const uint Press11 = 11;
-                public const uint Press12 = 12;
-                public const uint Press13 = 13;
-                public const uint Press14 = 14;
-                public const uint Press15 = 15;
-                public const uint Press16 = 16;
-                public const uint Press17 = 17;
-                public const uint Press18 = 18;
-                public const uint Press19 = 19;
-                public const uint Press20 = 20;
-                public const uint Press21 = 21;
-                public const uint Press22 = 22;
-                public const uint Press23 = 23;
-                public const uint Press24 = 24;
-                public const uint Press25 = 25;
-                public const uint Press26 = 26;
-                public const uint Press27 = 27;
-                public const uint Press28 = 28;
-                public const uint Press29 = 29;
-                public const uint Press30 = 30;
-                public const uint Press31 = 31;
-                public const uint Press32 = 32;
-                public const uint Press33 = 33;
-                public const uint Press34 = 34;
-                public const uint Press35 = 35;
-                public const uint Press36 = 36;
-                public const uint Press37 = 37;
-                public const uint Press38 = 38;
-                public const uint Press39 = 39;
-                public const uint Press40 = 40;
-                public const uint Press41 = 41;
-                public const uint Press42 = 42;
-                public const uint Press43 = 43;
-                public const uint Press44 = 44;
-                public const uint Press45 = 45;
-                public const uint Press46 = 46;
-                public const uint Press47 = 47;
-                public const uint Press48 = 48;
-                public const uint Press49 = 49;
-                public const uint Press50 = 50;
-                public const uint Press51 = 51;
-                public const uint Press52 = 52;
-                public const uint Press53 = 53;
-                public const uint Press54 = 54;
-                public const uint Press55 = 55;
-                public const uint Press56 = 56;
-                public const uint Press57 = 57;
-                public const uint Press58 = 58;
-                public const uint Press59 = 59;
-                public const uint Press60 = 60;
-                public const uint Press61 = 61;
-                public const uint Press62 = 62;
-                public const uint Press63 = 63;
-                public const uint Press64 = 64;
-                public const uint Press65 = 65;
-                public const uint Press66 = 66;
-                public const uint Press67 = 67;
-                public const uint Press68 = 68;
-                public const uint Press69 = 69;
-                public const uint Press70 = 70;
-                public const uint Press71 = 71;
-                public const uint Press72 = 72;
-                public const uint Press73 = 73;
-                public const uint Press74 = 74;
-                public const uint Press75 = 75;
-                public const uint Press76 = 76;
-                public const uint Press77 = 77;
-                public const uint Press78 = 78;
-                public const uint Press79 = 79;
-                public const uint Press80 = 80;
-                public const uint Press81 = 81;
-                public const uint Press82 = 82;
-                public const uint Press83 = 83;
-                public const uint Press84 = 84;
-                public const uint Press85 = 85;
-                public const uint Press86 = 86;
-                public const uint Press87 = 87;
-                public const uint Press88 = 88;
-                public const uint Press89 = 89;
-                public const uint Press90 = 90;
-                public const uint Press91 = 91;
-                public const uint Press92 = 92;
-                public const uint Press93 = 93;
-                public const uint Press94 = 94;
-                public const uint Press95 = 95;
-                public const uint Press96 = 96;
-                public const uint Press97 = 97;
-                public const uint Press98 = 98;
-                public const uint Press99 = 99;
-                public const uint Press100 = 100;
-                public const uint Press101 = 101;
-                public const uint Press102 = 102;
-                public const uint Press103 = 103;
-                public const uint Press104 = 104;
-                public const uint Press105 = 105;
-                public const uint Press106 = 106;
-                public const uint Press107 = 107;
-                public const uint Press108 = 108;
-                public const uint Press109 = 109;
-                public const uint Press110 = 110;
-                public const uint Press111 = 111;
-                public const uint Press112 = 112;
-                public const uint Press113 = 113;
-                public const uint Press114 = 114;
-                public const uint Press115 = 115;
-                public const uint Press116 = 116;
-                public const uint Press117 = 117;
-                public const uint Press118 = 118;
-                public const uint Press119 = 119;
-                public const uint Press120 = 120;
-                public const uint Press121 = 121;
-                public const uint Press122 = 122;
-                public const uint Press123 = 123;
-                public const uint Press124 = 124;
-                public const uint Press125 = 125;
-                public const uint Press126 = 126;
-                public const uint Press127 = 127;
-                public const uint Press128 = 128;
-                public const uint Press129 = 129;
-                public const uint Press130 = 130;
-                public const uint Press131 = 131;
-                public const uint Press132 = 132;
-                public const uint Press133 = 133;
-                public const uint Press134 = 134;
-                public const uint Press135 = 135;
-                public const uint Press136 = 136;
-                public const uint Press137 = 137;
-                public const uint Press138 = 138;
-                public const uint Press139 = 139;
-                public const uint Press140 = 140;
-                public const uint Press141 = 141;
-                public const uint Press142 = 142;
-                public const uint Press143 = 143;
-                public const uint Press144 = 144;
-                public const uint Press145 = 145;
-                public const uint Press146 = 146;
-                public const uint Press147 = 147;
-                public const uint Press148 = 148;
-                public const uint Press149 = 149;
-                public const uint Press150 = 150;
-                public const uint Press151 = 151;
-                public const uint Press152 = 152;
-                public const uint Press153 = 153;
-                public const uint Press154 = 154;
-                public const uint Press155 = 155;
-                public const uint Press156 = 156;
-                public const uint Press157 = 157;
-                public const uint Press158 = 158;
-                public const uint Press159 = 159;
-                public const uint Press160 = 160;
-                public const uint Press161 = 161;
-                public const uint Press162 = 162;
-                public const uint Press163 = 163;
-                public const uint Press164 = 164;
-                public const uint Press165 = 165;
-                public const uint Press166 = 166;
-                public const uint Press167 = 167;
-                public const uint Press168 = 168;
-                public const uint Press169 = 169;
-                public const uint Press170 = 170;
-                public const uint Press171 = 171;
-                public const uint Press172 = 172;
-                public const uint Press173 = 173;
-                public const uint Press174 = 174;
-                public const uint Press175 = 175;
-                public const uint Press176 = 176;
-                public const uint Press177 = 177;
-                public const uint Press178 = 178;
-                public const uint Press179 = 179;
-                public const uint Press180 = 180;
-                public const uint Press181 = 181;
-                public const uint Press182 = 182;
-                public const uint Press183 = 183;
-                public const uint Press184 = 184;
-                public const uint Press185 = 185;
-                public const uint Press186 = 186;
-                public const uint Press187 = 187;
-                public const uint Press188 = 188;
-                public const uint Press189 = 189;
+                public const uint Press0 = 1;
+                public const uint Press1 = 2;
+                public const uint Press2 = 3;
+                public const uint Press3 = 4;
+                public const uint Press4 = 5;
+                public const uint Press5 = 6;
+                public const uint Press6 = 7;
+                public const uint Press7 = 8;
+                public const uint Press8 = 9;
+                public const uint Press9 = 10;
+                public const uint Press10 = 11;
+                public const uint Press11 = 12;
+                public const uint Press12 = 13;
+                public const uint Press13 = 14;
+                public const uint Press14 = 15;
+                public const uint Press15 = 16;
+                public const uint Press16 = 17;
+                public const uint Press17 = 18;
+                public const uint Press18 = 19;
+                public const uint Press19 = 20;
+                public const uint Press20 = 21;
+                public const uint Press21 = 22;
+                public const uint Press22 = 23;
+                public const uint Press23 = 24;
+                public const uint Press24 = 25;
+                public const uint Press25 = 26;
+                public const uint Press26 = 27;
+                public const uint Press27 = 28;
+                public const uint Press28 = 29;
+                public const uint Press29 = 30;
+                public const uint Press30 = 31;
+                public const uint Press31 = 32;
+                public const uint Press32 = 33;
+                public const uint Press33 = 34;
+                public const uint Press34 = 35;
+                public const uint Press35 = 36;
+                public const uint Press36 = 37;
+                public const uint Press37 = 38;
+                public const uint Press38 = 39;
+                public const uint Press39 = 40;
+                public const uint Press40 = 41;
+                public const uint Press41 = 42;
+                public const uint Press42 = 43;
+                public const uint Press43 = 44;
+                public const uint Press44 = 45;
+                public const uint Press45 = 46;
+                public const uint Press46 = 47;
+                public const uint Press47 = 48;
+                public const uint Press48 = 49;
+                public const uint Press49 = 50;
+                public const uint Press50 = 51;
+                public const uint Press51 = 52;
+                public const uint Press52 = 53;
+                public const uint Press53 = 54;
+                public const uint Press54 = 55;
+                public const uint Press55 = 56;
+                public const uint Press56 = 57;
+                public const uint Press57 = 58;
+                public const uint Press58 = 59;
+                public const uint Press59 = 60;
+                public const uint Press60 = 61;
+                public const uint Press61 = 62;
+                public const uint Press62 = 63;
+                public const uint Press63 = 64;
+                public const uint Press64 = 65;
+                public const uint Press65 = 66;
+                public const uint Press66 = 67;
+                public const uint Press67 = 68;
+                public const uint Press68 = 69;
+                public const uint Press69 = 70;
+                public const uint Press70 = 71;
+                public const uint Press71 = 72;
+                public const uint Press72 = 73;
+                public const uint Press73 = 74;
+                public const uint Press74 = 75;
+                public const uint Press75 = 76;
+                public const uint Press76 = 77;
+                public const uint Press77 = 78;
+                public const uint Press78 = 79;
+                public const uint Press79 = 80;
+                public const uint Press80 = 81;
+                public const uint Press81 = 82;
+                public const uint Press82 = 83;
+                public const uint Press83 = 84;
+                public const uint Press84 = 85;
+                public const uint Press85 = 86;
+                public const uint Press86 = 87;
+                public const uint Press87 = 88;
+                public const uint Press88 = 89;
+                public const uint Press89 = 90;
+                public const uint Press90 = 91;
+                public const uint Press91 = 92;
+                public const uint Press92 = 93;
+                public const uint Press93 = 94;
+                public const uint Press94 = 95;
+                public const uint Press95 = 96;
+                public const uint Press96 = 97;
+                public const uint Press97 = 98;
+                public const uint Press98 = 99;
+                public const uint Press99 = 100;
+                public const uint Press100 = 101;
+                public const uint Press101 = 102;
+                public const uint Press102 = 103;
+                public const uint Press103 = 104;
+                public const uint Press104 = 105;
+                public const uint Press105 = 106;
+                public const uint Press106 = 107;
+                public const uint Press107 = 108;
+                public const uint Press108 = 109;
+                public const uint Press109 = 110;
+                public const uint Press110 = 111;
+                public const uint Press111 = 112;
+                public const uint Press112 = 113;
+                public const uint Press113 = 114;
+                public const uint Press114 = 115;
+                public const uint Press115 = 116;
+                public const uint Press116 = 117;
+                public const uint Press117 = 118;
+                public const uint Press118 = 119;
+                public const uint Press119 = 120;
+                public const uint Press120 = 121;
+                public const uint Press121 = 122;
+                public const uint Press122 = 123;
+                public const uint Press123 = 124;
+                public const uint Press124 = 125;
+                public const uint Press125 = 126;
+                public const uint Press126 = 127;
+                public const uint Press127 = 128;
+                public const uint Press128 = 129;
+                public const uint Press129 = 130;
+                public const uint Press130 = 131;
+                public const uint Press131 = 132;
+                public const uint Press132 = 133;
+                public const uint Press133 = 134;
+                public const uint Press134 = 135;
+                public const uint Press135 = 136;
+                public const uint Press136 = 137;
+                public const uint Press137 = 138;
+                public const uint Press138 = 139;
+                public const uint Press139 = 140;
+                public const uint Press140 = 141;
+                public const uint Press141 = 142;
+                public const uint Press142 = 143;
+                public const uint Press143 = 144;
+                public const uint Press144 = 145;
+                public const uint Press145 = 146;
+                public const uint Press146 = 147;
+                public const uint Press147 = 148;
+                public const uint Press148 = 149;
+                public const uint Press149 = 150;
+                public const uint Press150 = 151;
+                public const uint Press151 = 152;
+                public const uint Press152 = 153;
+                public const uint Press153 = 154;
+                public const uint Press154 = 155;
+                public const uint Press155 = 156;
+                public const uint Press156 = 157;
+                public const uint Press157 = 158;
+                public const uint Press158 = 159;
+                public const uint Press159 = 160;
+                public const uint Press160 = 161;
+                public const uint Press161 = 162;
+                public const uint Press162 = 163;
+                public const uint Press163 = 164;
+                public const uint Press164 = 165;
+                public const uint Press165 = 166;
+                public const uint Press166 = 167;
+                public const uint Press167 = 168;
+                public const uint Press168 = 169;
+                public const uint Press169 = 170;
+                public const uint Press170 = 171;
+                public const uint Press171 = 172;
+                public const uint Press172 = 173;
+                public const uint Press173 = 174;
+                public const uint Press174 = 175;
+                public const uint Press175 = 176;
+                public const uint Press176 = 177;
+                public const uint Press177 = 178;
+                public const uint Press178 = 179;
+                public const uint Press179 = 180;
+                public const uint Press180 = 181;
+                public const uint Press181 = 182;
+                public const uint Press182 = 183;
+                public const uint Press183 = 184;
+                public const uint Press184 = 185;
+                public const uint Press185 = 186;
+                public const uint Press186 = 187;
+                public const uint Press187 = 188;
+                public const uint Press188 = 189;
                 public const uint Press190 = 190;
                 public const uint Press191 = 191;
                 public const uint Press192 = 192;
@@ -1038,513 +788,260 @@ namespace CBlink
                 public const uint Press247 = 247;
                 public const uint Press248 = 248;
                 public const uint Press249 = 249;
-                public const uint Press0 = 250;
-                public const uint Save_Area = 251;
+                public const uint Press250 = 250;
+                public const uint Press189 = 251;
 
-                public const uint Pressed1 = 1;
-                public const uint Pressed2 = 2;
-                public const uint Pressed3 = 3;
-                public const uint Pressed4 = 4;
-                public const uint Pressed5 = 5;
-                public const uint Pressed6 = 6;
-                public const uint Pressed7 = 7;
-                public const uint Pressed8 = 8;
-                public const uint Pressed9 = 9;
-                public const uint Pressed10 = 10;
-                public const uint Pressed11 = 11;
-                public const uint Pressed12 = 12;
-                public const uint Pressed13 = 13;
-                public const uint Pressed14 = 14;
-                public const uint Pressed15 = 15;
-                public const uint Pressed16 = 16;
-                public const uint Pressed17 = 17;
-                public const uint Pressed18 = 18;
-                public const uint Pressed19 = 19;
-                public const uint Pressed20 = 20;
-                public const uint Pressed21 = 21;
-                public const uint Pressed22 = 22;
-                public const uint Pressed23 = 23;
-                public const uint Pressed24 = 24;
-                public const uint Pressed25 = 25;
-                public const uint Pressed26 = 26;
-                public const uint Pressed27 = 27;
-                public const uint Pressed28 = 28;
-                public const uint Pressed29 = 29;
-                public const uint Pressed30 = 30;
-                public const uint Pressed31 = 31;
-                public const uint Pressed32 = 32;
-                public const uint Pressed33 = 33;
-                public const uint Pressed34 = 34;
-                public const uint Pressed35 = 35;
-                public const uint Pressed36 = 36;
-                public const uint Pressed37 = 37;
-                public const uint Pressed38 = 38;
-                public const uint Pressed39 = 39;
-                public const uint Pressed40 = 40;
-                public const uint Pressed41 = 41;
-                public const uint Pressed42 = 42;
-                public const uint Pressed43 = 43;
-                public const uint Pressed44 = 44;
-                public const uint Pressed45 = 45;
-                public const uint Pressed46 = 46;
-                public const uint Pressed47 = 47;
-                public const uint Pressed48 = 48;
-                public const uint Pressed49 = 49;
-                public const uint Pressed50 = 50;
-                public const uint Pressed51 = 51;
-                public const uint Pressed52 = 52;
-                public const uint Pressed53 = 53;
-                public const uint Pressed54 = 54;
-                public const uint Pressed55 = 55;
-                public const uint Pressed56 = 56;
-                public const uint Pressed57 = 57;
-                public const uint Pressed58 = 58;
-                public const uint Pressed59 = 59;
-                public const uint Pressed60 = 60;
-                public const uint Pressed61 = 61;
-                public const uint Pressed62 = 62;
-                public const uint Pressed63 = 63;
-                public const uint Pressed64 = 64;
-                public const uint Pressed65 = 65;
-                public const uint Pressed66 = 66;
-                public const uint Pressed67 = 67;
-                public const uint Pressed68 = 68;
-                public const uint Pressed69 = 69;
-                public const uint Pressed70 = 70;
-                public const uint Pressed71 = 71;
-                public const uint Pressed72 = 72;
-                public const uint Pressed73 = 73;
-                public const uint Pressed74 = 74;
-                public const uint Pressed75 = 75;
-                public const uint Pressed76 = 76;
-                public const uint Pressed77 = 77;
-                public const uint Pressed78 = 78;
-                public const uint Pressed79 = 79;
-                public const uint Pressed80 = 80;
-                public const uint Pressed81 = 81;
-                public const uint Pressed82 = 82;
-                public const uint Pressed83 = 83;
-                public const uint Pressed84 = 84;
-                public const uint Pressed85 = 85;
-                public const uint Pressed86 = 86;
-                public const uint Pressed87 = 87;
-                public const uint Pressed88 = 88;
-                public const uint Pressed89 = 89;
-                public const uint Pressed90 = 90;
-                public const uint Pressed91 = 91;
-                public const uint Pressed92 = 92;
-                public const uint Pressed93 = 93;
-                public const uint Pressed94 = 94;
-                public const uint Pressed95 = 95;
-                public const uint Pressed96 = 96;
-                public const uint Pressed97 = 97;
-                public const uint Pressed98 = 98;
-                public const uint Pressed99 = 99;
-                public const uint Pressed100 = 100;
-                public const uint Pressed101 = 101;
-                public const uint Pressed102 = 102;
-                public const uint Pressed103 = 103;
-                public const uint Pressed104 = 104;
-                public const uint Pressed105 = 105;
-                public const uint Pressed106 = 106;
-                public const uint Pressed107 = 107;
-                public const uint Pressed108 = 108;
-                public const uint Pressed109 = 109;
-                public const uint Pressed110 = 110;
-                public const uint Pressed111 = 111;
-                public const uint Pressed112 = 112;
-                public const uint Pressed113 = 113;
-                public const uint Pressed114 = 114;
-                public const uint Pressed115 = 115;
-                public const uint Pressed116 = 116;
-                public const uint Pressed117 = 117;
-                public const uint Pressed118 = 118;
-                public const uint Pressed119 = 119;
-                public const uint Pressed120 = 120;
-                public const uint Pressed121 = 121;
-                public const uint Pressed122 = 122;
-                public const uint Pressed123 = 123;
-                public const uint Pressed124 = 124;
-                public const uint Pressed125 = 125;
-                public const uint Pressed126 = 126;
-                public const uint Pressed127 = 127;
-                public const uint Pressed128 = 128;
-                public const uint Pressed129 = 129;
-                public const uint Pressed130 = 130;
-                public const uint Pressed131 = 131;
-                public const uint Pressed132 = 132;
-                public const uint Pressed133 = 133;
-                public const uint Pressed134 = 134;
-                public const uint Pressed135 = 135;
-                public const uint Pressed136 = 136;
-                public const uint Pressed137 = 137;
-                public const uint Pressed138 = 138;
-                public const uint Pressed139 = 139;
-                public const uint Pressed140 = 140;
-                public const uint Pressed141 = 141;
-                public const uint Pressed142 = 142;
-                public const uint Pressed143 = 143;
-                public const uint Pressed144 = 144;
-                public const uint Pressed145 = 145;
-                public const uint Pressed146 = 146;
-                public const uint Pressed147 = 147;
-                public const uint Pressed148 = 148;
-                public const uint Pressed149 = 149;
-                public const uint Pressed150 = 150;
-                public const uint Pressed151 = 151;
-                public const uint Pressed152 = 152;
-                public const uint Pressed153 = 153;
-                public const uint Pressed154 = 154;
-                public const uint Pressed155 = 155;
-                public const uint Pressed156 = 156;
-                public const uint Pressed157 = 157;
-                public const uint Pressed158 = 158;
-                public const uint Pressed159 = 159;
-                public const uint Pressed160 = 160;
-                public const uint Pressed161 = 161;
-                public const uint Pressed162 = 162;
-                public const uint Pressed163 = 163;
-                public const uint Pressed164 = 164;
-                public const uint Pressed165 = 165;
-                public const uint Pressed166 = 166;
-                public const uint Pressed167 = 167;
-                public const uint Pressed168 = 168;
-                public const uint Pressed169 = 169;
-                public const uint Pressed170 = 170;
-                public const uint Pressed171 = 171;
-                public const uint Pressed172 = 172;
-                public const uint Pressed173 = 173;
-                public const uint Pressed174 = 174;
-                public const uint Pressed175 = 175;
-                public const uint Pressed176 = 176;
-                public const uint Pressed177 = 177;
-                public const uint Pressed178 = 178;
-                public const uint Pressed179 = 179;
-                public const uint Pressed180 = 180;
-                public const uint Pressed181 = 181;
-                public const uint Pressed182 = 182;
-                public const uint Pressed183 = 183;
-                public const uint Pressed184 = 184;
-                public const uint Pressed185 = 185;
-                public const uint Pressed186 = 186;
-                public const uint Pressed187 = 187;
-                public const uint Pressed188 = 188;
-                public const uint Pressed189 = 189;
-                public const uint Pressed190 = 190;
-                public const uint Pressed191 = 191;
-                public const uint Pressed192 = 192;
-                public const uint Pressed193 = 193;
-                public const uint Pressed194 = 194;
-                public const uint Pressed195 = 195;
-                public const uint Pressed196 = 196;
-                public const uint Pressed197 = 197;
-                public const uint Pressed198 = 198;
-                public const uint Pressed199 = 199;
-                public const uint Pressed200 = 200;
-                public const uint Pressed201 = 201;
-                public const uint Pressed202 = 202;
-                public const uint Pressed203 = 203;
-                public const uint Pressed204 = 204;
-                public const uint Pressed205 = 205;
-                public const uint Pressed206 = 206;
-                public const uint Pressed207 = 207;
-                public const uint Pressed208 = 208;
-                public const uint Pressed209 = 209;
-                public const uint Pressed210 = 210;
-                public const uint Pressed211 = 211;
-                public const uint Pressed212 = 212;
-                public const uint Pressed213 = 213;
-                public const uint Pressed214 = 214;
-                public const uint Pressed215 = 215;
-                public const uint Pressed216 = 216;
-                public const uint Pressed217 = 217;
-                public const uint Pressed218 = 218;
-                public const uint Pressed219 = 219;
-                public const uint Pressed220 = 220;
-                public const uint Pressed221 = 221;
-                public const uint Pressed222 = 222;
-                public const uint Pressed223 = 223;
-                public const uint Pressed224 = 224;
-                public const uint Pressed225 = 225;
-                public const uint Pressed226 = 226;
-                public const uint Pressed227 = 227;
-                public const uint Pressed228 = 228;
-                public const uint Pressed229 = 229;
-                public const uint Pressed230 = 230;
-                public const uint Pressed231 = 231;
-                public const uint Pressed232 = 232;
-                public const uint Pressed233 = 233;
-                public const uint Pressed234 = 234;
-                public const uint Pressed235 = 235;
-                public const uint Pressed236 = 236;
-                public const uint Pressed237 = 237;
-                public const uint Pressed238 = 238;
-                public const uint Pressed239 = 239;
-                public const uint Pressed240 = 240;
-                public const uint Pressed241 = 241;
-                public const uint Pressed242 = 242;
-                public const uint Pressed243 = 243;
-                public const uint Pressed244 = 244;
-                public const uint Pressed245 = 245;
-                public const uint Pressed246 = 246;
-                public const uint Pressed247 = 247;
-                public const uint Pressed248 = 248;
-                public const uint Pressed249 = 249;
-                public const uint Pressed0 = 250;
-            }
-            internal static class Strings
-            {
-
-                public const uint Zone1 = 1;
-                public const uint Zone2 = 2;
-                public const uint Zone3 = 3;
-                public const uint Zone4 = 4;
-                public const uint Zone5 = 5;
-                public const uint Zone6 = 6;
-                public const uint Zone7 = 7;
-                public const uint Zone8 = 8;
-                public const uint Zone9 = 9;
-                public const uint Zone10 = 10;
-                public const uint Zone11 = 11;
-                public const uint Zone12 = 12;
-                public const uint Zone13 = 13;
-                public const uint Zone14 = 14;
-                public const uint Zone15 = 15;
-                public const uint Zone16 = 16;
-                public const uint Zone17 = 17;
-                public const uint Zone18 = 18;
-                public const uint Zone19 = 19;
-                public const uint Zone20 = 20;
-                public const uint Zone21 = 21;
-                public const uint Zone22 = 22;
-                public const uint Zone23 = 23;
-                public const uint Zone24 = 24;
-                public const uint Zone25 = 25;
-                public const uint Zone26 = 26;
-                public const uint Zone27 = 27;
-                public const uint Zone28 = 28;
-                public const uint Zone29 = 29;
-                public const uint Zone30 = 30;
-                public const uint Zone31 = 31;
-                public const uint Zone32 = 32;
-                public const uint Zone33 = 33;
-                public const uint Zone34 = 34;
-                public const uint Zone35 = 35;
-                public const uint Zone36 = 36;
-                public const uint Zone37 = 37;
-                public const uint Zone38 = 38;
-                public const uint Zone39 = 39;
-                public const uint Zone40 = 40;
-                public const uint Zone41 = 41;
-                public const uint Zone42 = 42;
-                public const uint Zone43 = 43;
-                public const uint Zone44 = 44;
-                public const uint Zone45 = 45;
-                public const uint Zone46 = 46;
-                public const uint Zone47 = 47;
-                public const uint Zone48 = 48;
-                public const uint Zone49 = 49;
-                public const uint Zone50 = 50;
-                public const uint Zone51 = 51;
-                public const uint Zone52 = 52;
-                public const uint Zone53 = 53;
-                public const uint Zone54 = 54;
-                public const uint Zone55 = 55;
-                public const uint Zone56 = 56;
-                public const uint Zone57 = 57;
-                public const uint Zone58 = 58;
-                public const uint Zone59 = 59;
-                public const uint Zone60 = 60;
-                public const uint Zone61 = 61;
-                public const uint Zone62 = 62;
-                public const uint Zone63 = 63;
-                public const uint Zone64 = 64;
-                public const uint Zone65 = 65;
-                public const uint Zone66 = 66;
-                public const uint Zone67 = 67;
-                public const uint Zone68 = 68;
-                public const uint Zone69 = 69;
-                public const uint Zone70 = 70;
-                public const uint Zone71 = 71;
-                public const uint Zone72 = 72;
-                public const uint Zone73 = 73;
-                public const uint Zone74 = 74;
-                public const uint Zone75 = 75;
-                public const uint Zone76 = 76;
-                public const uint Zone77 = 77;
-                public const uint Zone78 = 78;
-                public const uint Zone79 = 79;
-                public const uint Zone80 = 80;
-                public const uint Zone81 = 81;
-                public const uint Zone82 = 82;
-                public const uint Zone83 = 83;
-                public const uint Zone84 = 84;
-                public const uint Zone85 = 85;
-                public const uint Zone86 = 86;
-                public const uint Zone87 = 87;
-                public const uint Zone88 = 88;
-                public const uint Zone89 = 89;
-                public const uint Zone90 = 90;
-                public const uint Zone91 = 91;
-                public const uint Zone92 = 92;
-                public const uint Zone93 = 93;
-                public const uint Zone94 = 94;
-                public const uint Zone95 = 95;
-                public const uint Zone96 = 96;
-                public const uint Zone97 = 97;
-                public const uint Zone98 = 98;
-                public const uint Zone99 = 99;
-                public const uint Zone100 = 100;
-                public const uint Zone101 = 101;
-                public const uint Zone102 = 102;
-                public const uint Zone103 = 103;
-                public const uint Zone104 = 104;
-                public const uint Zone105 = 105;
-                public const uint Zone106 = 106;
-                public const uint Zone107 = 107;
-                public const uint Zone108 = 108;
-                public const uint Zone109 = 109;
-                public const uint Zone110 = 110;
-                public const uint Zone111 = 111;
-                public const uint Zone112 = 112;
-                public const uint Zone113 = 113;
-                public const uint Zone114 = 114;
-                public const uint Zone115 = 115;
-                public const uint Zone116 = 116;
-                public const uint Zone117 = 117;
-                public const uint Zone118 = 118;
-                public const uint Zone119 = 119;
-                public const uint Zone120 = 120;
-                public const uint Zone121 = 121;
-                public const uint Zone122 = 122;
-                public const uint Zone123 = 123;
-                public const uint Zone124 = 124;
-                public const uint Zone125 = 125;
-                public const uint Zone126 = 126;
-                public const uint Zone127 = 127;
-                public const uint Zone128 = 128;
-                public const uint Zone129 = 129;
-                public const uint Zone130 = 130;
-                public const uint Zone131 = 131;
-                public const uint Zone132 = 132;
-                public const uint Zone133 = 133;
-                public const uint Zone134 = 134;
-                public const uint Zone135 = 135;
-                public const uint Zone136 = 136;
-                public const uint Zone137 = 137;
-                public const uint Zone138 = 138;
-                public const uint Zone139 = 139;
-                public const uint Zone140 = 140;
-                public const uint Zone141 = 141;
-                public const uint Zone142 = 142;
-                public const uint Zone143 = 143;
-                public const uint Zone144 = 144;
-                public const uint Zone145 = 145;
-                public const uint Zone146 = 146;
-                public const uint Zone147 = 147;
-                public const uint Zone148 = 148;
-                public const uint Zone149 = 149;
-                public const uint Zone150 = 150;
-                public const uint Zone151 = 151;
-                public const uint Zone152 = 152;
-                public const uint Zone153 = 153;
-                public const uint Zone154 = 154;
-                public const uint Zone155 = 155;
-                public const uint Zone156 = 156;
-                public const uint Zone157 = 157;
-                public const uint Zone158 = 158;
-                public const uint Zone159 = 159;
-                public const uint Zone160 = 160;
-                public const uint Zone161 = 161;
-                public const uint Zone162 = 162;
-                public const uint Zone163 = 163;
-                public const uint Zone164 = 164;
-                public const uint Zone165 = 165;
-                public const uint Zone166 = 166;
-                public const uint Zone167 = 167;
-                public const uint Zone168 = 168;
-                public const uint Zone169 = 169;
-                public const uint Zone170 = 170;
-                public const uint Zone171 = 171;
-                public const uint Zone172 = 172;
-                public const uint Zone173 = 173;
-                public const uint Zone174 = 174;
-                public const uint Zone175 = 175;
-                public const uint Zone176 = 176;
-                public const uint Zone177 = 177;
-                public const uint Zone178 = 178;
-                public const uint Zone179 = 179;
-                public const uint Zone180 = 180;
-                public const uint Zone181 = 181;
-                public const uint Zone182 = 182;
-                public const uint Zone183 = 183;
-                public const uint Zone184 = 184;
-                public const uint Zone185 = 185;
-                public const uint Zone186 = 186;
-                public const uint Zone187 = 187;
-                public const uint Zone188 = 188;
-                public const uint Zone189 = 189;
-                public const uint Zone190 = 190;
-                public const uint Zone191 = 191;
-                public const uint Zone192 = 192;
-                public const uint Zone193 = 193;
-                public const uint Zone194 = 194;
-                public const uint Zone195 = 195;
-                public const uint Zone196 = 196;
-                public const uint Zone197 = 197;
-                public const uint Zone198 = 198;
-                public const uint Zone199 = 199;
-                public const uint Zone200 = 200;
-                public const uint Zone201 = 201;
-                public const uint Zone202 = 202;
-                public const uint Zone203 = 203;
-                public const uint Zone204 = 204;
-                public const uint Zone205 = 205;
-                public const uint Zone206 = 206;
-                public const uint Zone207 = 207;
-                public const uint Zone208 = 208;
-                public const uint Zone209 = 209;
-                public const uint Zone210 = 210;
-                public const uint Zone211 = 211;
-                public const uint Zone212 = 212;
-                public const uint Zone213 = 213;
-                public const uint Zone214 = 214;
-                public const uint Zone215 = 215;
-                public const uint Zone216 = 216;
-                public const uint Zone217 = 217;
-                public const uint Zone218 = 218;
-                public const uint Zone219 = 219;
-                public const uint Zone220 = 220;
-                public const uint Zone221 = 221;
-                public const uint Zone222 = 222;
-                public const uint Zone223 = 223;
-                public const uint Zone224 = 224;
-                public const uint Zone225 = 225;
-                public const uint Zone226 = 226;
-                public const uint Zone227 = 227;
-                public const uint Zone228 = 228;
-                public const uint Zone229 = 229;
-                public const uint Zone230 = 230;
-                public const uint Zone231 = 231;
-                public const uint Zone232 = 232;
-                public const uint Zone233 = 233;
-                public const uint Zone234 = 234;
-                public const uint Zone235 = 235;
-                public const uint Zone236 = 236;
-                public const uint Zone237 = 237;
-                public const uint Zone238 = 238;
-                public const uint Zone239 = 239;
-                public const uint Zone240 = 240;
-                public const uint Zone241 = 241;
-                public const uint Zone242 = 242;
-                public const uint Zone243 = 243;
-                public const uint Zone244 = 244;
-                public const uint Zone245 = 245;
-                public const uint Zone246 = 246;
-                public const uint Zone247 = 247;
-                public const uint Zone248 = 248;
-                public const uint Zone249 = 249;
-                public const uint Zone0 = 250;
+                public const uint Pressed0 = 1;
+                public const uint Pressed1 = 2;
+                public const uint Pressed2 = 3;
+                public const uint Pressed3 = 4;
+                public const uint Pressed4 = 5;
+                public const uint Pressed5 = 6;
+                public const uint Pressed6 = 7;
+                public const uint Pressed7 = 8;
+                public const uint Pressed8 = 9;
+                public const uint Pressed9 = 10;
+                public const uint Pressed10 = 11;
+                public const uint Pressed11 = 12;
+                public const uint Pressed12 = 13;
+                public const uint Pressed13 = 14;
+                public const uint Pressed14 = 15;
+                public const uint Pressed15 = 16;
+                public const uint Pressed16 = 17;
+                public const uint Pressed17 = 18;
+                public const uint Pressed18 = 19;
+                public const uint Pressed19 = 20;
+                public const uint Pressed20 = 21;
+                public const uint Pressed21 = 22;
+                public const uint Pressed22 = 23;
+                public const uint Pressed23 = 24;
+                public const uint Pressed24 = 25;
+                public const uint Pressed25 = 26;
+                public const uint Pressed26 = 27;
+                public const uint Pressed27 = 28;
+                public const uint Pressed28 = 29;
+                public const uint Pressed29 = 30;
+                public const uint Pressed30 = 31;
+                public const uint Pressed31 = 32;
+                public const uint Pressed32 = 33;
+                public const uint Pressed33 = 34;
+                public const uint Pressed34 = 35;
+                public const uint Pressed35 = 36;
+                public const uint Pressed36 = 37;
+                public const uint Pressed37 = 38;
+                public const uint Pressed38 = 39;
+                public const uint Pressed39 = 40;
+                public const uint Pressed40 = 41;
+                public const uint Pressed41 = 42;
+                public const uint Pressed42 = 43;
+                public const uint Pressed43 = 44;
+                public const uint Pressed44 = 45;
+                public const uint Pressed45 = 46;
+                public const uint Pressed46 = 47;
+                public const uint Pressed47 = 48;
+                public const uint Pressed48 = 49;
+                public const uint Pressed49 = 50;
+                public const uint Pressed50 = 51;
+                public const uint Pressed51 = 52;
+                public const uint Pressed52 = 53;
+                public const uint Pressed53 = 54;
+                public const uint Pressed54 = 55;
+                public const uint Pressed55 = 56;
+                public const uint Pressed56 = 57;
+                public const uint Pressed57 = 58;
+                public const uint Pressed58 = 59;
+                public const uint Pressed59 = 60;
+                public const uint Pressed60 = 61;
+                public const uint Pressed61 = 62;
+                public const uint Pressed62 = 63;
+                public const uint Pressed63 = 64;
+                public const uint Pressed64 = 65;
+                public const uint Pressed65 = 66;
+                public const uint Pressed66 = 67;
+                public const uint Pressed67 = 68;
+                public const uint Pressed68 = 69;
+                public const uint Pressed69 = 70;
+                public const uint Pressed70 = 71;
+                public const uint Pressed71 = 72;
+                public const uint Pressed72 = 73;
+                public const uint Pressed73 = 74;
+                public const uint Pressed74 = 75;
+                public const uint Pressed75 = 76;
+                public const uint Pressed76 = 77;
+                public const uint Pressed77 = 78;
+                public const uint Pressed78 = 79;
+                public const uint Pressed79 = 80;
+                public const uint Pressed80 = 81;
+                public const uint Pressed81 = 82;
+                public const uint Pressed82 = 83;
+                public const uint Pressed83 = 84;
+                public const uint Pressed84 = 85;
+                public const uint Pressed85 = 86;
+                public const uint Pressed86 = 87;
+                public const uint Pressed87 = 88;
+                public const uint Pressed88 = 89;
+                public const uint Pressed89 = 90;
+                public const uint Pressed90 = 91;
+                public const uint Pressed91 = 92;
+                public const uint Pressed92 = 93;
+                public const uint Pressed93 = 94;
+                public const uint Pressed94 = 95;
+                public const uint Pressed95 = 96;
+                public const uint Pressed96 = 97;
+                public const uint Pressed97 = 98;
+                public const uint Pressed98 = 99;
+                public const uint Pressed99 = 100;
+                public const uint Pressed100 = 101;
+                public const uint Pressed101 = 102;
+                public const uint Pressed102 = 103;
+                public const uint Pressed103 = 104;
+                public const uint Pressed104 = 105;
+                public const uint Pressed105 = 106;
+                public const uint Pressed106 = 107;
+                public const uint Pressed107 = 108;
+                public const uint Pressed108 = 109;
+                public const uint Pressed109 = 110;
+                public const uint Pressed110 = 111;
+                public const uint Pressed111 = 112;
+                public const uint Pressed112 = 113;
+                public const uint Pressed113 = 114;
+                public const uint Pressed114 = 115;
+                public const uint Pressed115 = 116;
+                public const uint Pressed116 = 117;
+                public const uint Pressed117 = 118;
+                public const uint Pressed118 = 119;
+                public const uint Pressed119 = 120;
+                public const uint Pressed120 = 121;
+                public const uint Pressed121 = 122;
+                public const uint Pressed122 = 123;
+                public const uint Pressed123 = 124;
+                public const uint Pressed124 = 125;
+                public const uint Pressed125 = 126;
+                public const uint Pressed126 = 127;
+                public const uint Pressed127 = 128;
+                public const uint Pressed128 = 129;
+                public const uint Pressed129 = 130;
+                public const uint Pressed130 = 131;
+                public const uint Pressed131 = 132;
+                public const uint Pressed132 = 133;
+                public const uint Pressed133 = 134;
+                public const uint Pressed134 = 135;
+                public const uint Pressed135 = 136;
+                public const uint Pressed136 = 137;
+                public const uint Pressed137 = 138;
+                public const uint Pressed138 = 139;
+                public const uint Pressed139 = 140;
+                public const uint Pressed140 = 141;
+                public const uint Pressed141 = 142;
+                public const uint Pressed142 = 143;
+                public const uint Pressed143 = 144;
+                public const uint Pressed144 = 145;
+                public const uint Pressed145 = 146;
+                public const uint Pressed146 = 147;
+                public const uint Pressed147 = 148;
+                public const uint Pressed148 = 149;
+                public const uint Pressed149 = 150;
+                public const uint Pressed150 = 151;
+                public const uint Pressed151 = 152;
+                public const uint Pressed152 = 153;
+                public const uint Pressed153 = 154;
+                public const uint Pressed154 = 155;
+                public const uint Pressed155 = 156;
+                public const uint Pressed156 = 157;
+                public const uint Pressed157 = 158;
+                public const uint Pressed158 = 159;
+                public const uint Pressed159 = 160;
+                public const uint Pressed160 = 161;
+                public const uint Pressed161 = 162;
+                public const uint Pressed162 = 163;
+                public const uint Pressed163 = 164;
+                public const uint Pressed164 = 165;
+                public const uint Pressed165 = 166;
+                public const uint Pressed166 = 167;
+                public const uint Pressed167 = 168;
+                public const uint Pressed168 = 169;
+                public const uint Pressed169 = 170;
+                public const uint Pressed170 = 171;
+                public const uint Pressed171 = 172;
+                public const uint Pressed172 = 173;
+                public const uint Pressed173 = 174;
+                public const uint Pressed174 = 175;
+                public const uint Pressed175 = 176;
+                public const uint Pressed176 = 177;
+                public const uint Pressed177 = 178;
+                public const uint Pressed178 = 179;
+                public const uint Pressed179 = 180;
+                public const uint Pressed180 = 181;
+                public const uint Pressed181 = 182;
+                public const uint Pressed182 = 183;
+                public const uint Pressed183 = 184;
+                public const uint Pressed184 = 185;
+                public const uint Pressed185 = 186;
+                public const uint Pressed186 = 187;
+                public const uint Pressed187 = 188;
+                public const uint Pressed188 = 189;
+                public const uint Pressed189 = 190;
+                public const uint Pressed190 = 191;
+                public const uint Pressed191 = 192;
+                public const uint Pressed192 = 193;
+                public const uint Pressed193 = 194;
+                public const uint Pressed194 = 195;
+                public const uint Pressed195 = 196;
+                public const uint Pressed196 = 197;
+                public const uint Pressed197 = 198;
+                public const uint Pressed198 = 199;
+                public const uint Pressed199 = 200;
+                public const uint Pressed200 = 201;
+                public const uint Pressed201 = 202;
+                public const uint Pressed202 = 203;
+                public const uint Pressed203 = 204;
+                public const uint Pressed204 = 205;
+                public const uint Pressed205 = 206;
+                public const uint Pressed206 = 207;
+                public const uint Pressed207 = 208;
+                public const uint Pressed208 = 209;
+                public const uint Pressed209 = 210;
+                public const uint Pressed210 = 211;
+                public const uint Pressed211 = 212;
+                public const uint Pressed212 = 213;
+                public const uint Pressed213 = 214;
+                public const uint Pressed214 = 215;
+                public const uint Pressed215 = 216;
+                public const uint Pressed216 = 217;
+                public const uint Pressed217 = 218;
+                public const uint Pressed218 = 219;
+                public const uint Pressed219 = 220;
+                public const uint Pressed220 = 221;
+                public const uint Pressed221 = 222;
+                public const uint Pressed222 = 223;
+                public const uint Pressed223 = 224;
+                public const uint Pressed224 = 225;
+                public const uint Pressed225 = 226;
+                public const uint Pressed226 = 227;
+                public const uint Pressed227 = 228;
+                public const uint Pressed228 = 229;
+                public const uint Pressed229 = 230;
+                public const uint Pressed230 = 231;
+                public const uint Pressed231 = 232;
+                public const uint Pressed232 = 233;
+                public const uint Pressed233 = 234;
+                public const uint Pressed234 = 235;
+                public const uint Pressed235 = 236;
+                public const uint Pressed236 = 237;
+                public const uint Pressed237 = 238;
+                public const uint Pressed238 = 239;
+                public const uint Pressed239 = 240;
+                public const uint Pressed240 = 241;
+                public const uint Pressed241 = 242;
+                public const uint Pressed242 = 243;
+                public const uint Pressed243 = 244;
+                public const uint Pressed244 = 245;
+                public const uint Pressed245 = 246;
+                public const uint Pressed246 = 247;
+                public const uint Pressed247 = 248;
+                public const uint Pressed248 = 249;
+                public const uint Pressed249 = 250;
+                public const uint Pressed250 = 251;
             }
         }
 
@@ -1552,7 +1049,7 @@ namespace CBlink
 
         #region Construction and Initialization
 
-        internal Zones(ComponentMediator componentMediator, uint controlJoinId)
+        internal Loads(ComponentMediator componentMediator, uint controlJoinId)
         {
             ComponentMediator = componentMediator;
             Initialize(controlJoinId);
@@ -1564,6 +1061,7 @@ namespace CBlink
  
             _devices = new List<BasicTriListWithSmartObject>(); 
  
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press0, onPress0);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press1, onPress1);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press2, onPress2);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press3, onPress3);
@@ -1752,7 +1250,6 @@ namespace CBlink
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press186, onPress186);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press187, onPress187);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press188, onPress188);
-            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press189, onPress189);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press190, onPress190);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press191, onPress191);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press192, onPress192);
@@ -1813,8 +1310,8 @@ namespace CBlink
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press247, onPress247);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press248, onPress248);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press249, onPress249);
-            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press0, onPress0);
-            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Save_Area, onSave_Area);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press250, onPress250);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Press189, onPress189);
 
         }
 
@@ -1833,6 +1330,14 @@ namespace CBlink
         #endregion
 
         #region CH5 Contract
+
+        public event EventHandler<UIEventArgs> Press0;
+        private void onPress0(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = Press0;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
 
         public event EventHandler<UIEventArgs> Press1;
         private void onPress1(SmartObjectEventArgs eventArgs)
@@ -3338,14 +2843,6 @@ namespace CBlink
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
         }
 
-        public event EventHandler<UIEventArgs> Press189;
-        private void onPress189(SmartObjectEventArgs eventArgs)
-        {
-            EventHandler<UIEventArgs> handler = Press189;
-            if (handler != null)
-                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
-        }
-
         public event EventHandler<UIEventArgs> Press190;
         private void onPress190(SmartObjectEventArgs eventArgs)
         {
@@ -3826,2016 +3323,24 @@ namespace CBlink
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
         }
 
-        public event EventHandler<UIEventArgs> Press0;
-        private void onPress0(SmartObjectEventArgs eventArgs)
+        public event EventHandler<UIEventArgs> Press250;
+        private void onPress250(SmartObjectEventArgs eventArgs)
         {
-            EventHandler<UIEventArgs> handler = Press0;
+            EventHandler<UIEventArgs> handler = Press250;
             if (handler != null)
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
         }
 
-        public event EventHandler<UIEventArgs> Save_Area;
-        private void onSave_Area(SmartObjectEventArgs eventArgs)
+        public event EventHandler<UIEventArgs> Press189;
+        private void onPress189(SmartObjectEventArgs eventArgs)
         {
-            EventHandler<UIEventArgs> handler = Save_Area;
+            EventHandler<UIEventArgs> handler = Press189;
             if (handler != null)
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
         }
 
 
-        public void Pressed1(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed1], this);
-            }
-        }
-
-        public void Pressed2(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed2], this);
-            }
-        }
-
-        public void Pressed3(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed3], this);
-            }
-        }
-
-        public void Pressed4(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed4], this);
-            }
-        }
-
-        public void Pressed5(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed5], this);
-            }
-        }
-
-        public void Pressed6(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed6], this);
-            }
-        }
-
-        public void Pressed7(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed7], this);
-            }
-        }
-
-        public void Pressed8(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed8], this);
-            }
-        }
-
-        public void Pressed9(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed9], this);
-            }
-        }
-
-        public void Pressed10(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed10], this);
-            }
-        }
-
-        public void Pressed11(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed11], this);
-            }
-        }
-
-        public void Pressed12(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed12], this);
-            }
-        }
-
-        public void Pressed13(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed13], this);
-            }
-        }
-
-        public void Pressed14(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed14], this);
-            }
-        }
-
-        public void Pressed15(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed15], this);
-            }
-        }
-
-        public void Pressed16(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed16], this);
-            }
-        }
-
-        public void Pressed17(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed17], this);
-            }
-        }
-
-        public void Pressed18(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed18], this);
-            }
-        }
-
-        public void Pressed19(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed19], this);
-            }
-        }
-
-        public void Pressed20(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed20], this);
-            }
-        }
-
-        public void Pressed21(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed21], this);
-            }
-        }
-
-        public void Pressed22(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed22], this);
-            }
-        }
-
-        public void Pressed23(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed23], this);
-            }
-        }
-
-        public void Pressed24(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed24], this);
-            }
-        }
-
-        public void Pressed25(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed25], this);
-            }
-        }
-
-        public void Pressed26(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed26], this);
-            }
-        }
-
-        public void Pressed27(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed27], this);
-            }
-        }
-
-        public void Pressed28(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed28], this);
-            }
-        }
-
-        public void Pressed29(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed29], this);
-            }
-        }
-
-        public void Pressed30(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed30], this);
-            }
-        }
-
-        public void Pressed31(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed31], this);
-            }
-        }
-
-        public void Pressed32(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed32], this);
-            }
-        }
-
-        public void Pressed33(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed33], this);
-            }
-        }
-
-        public void Pressed34(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed34], this);
-            }
-        }
-
-        public void Pressed35(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed35], this);
-            }
-        }
-
-        public void Pressed36(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed36], this);
-            }
-        }
-
-        public void Pressed37(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed37], this);
-            }
-        }
-
-        public void Pressed38(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed38], this);
-            }
-        }
-
-        public void Pressed39(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed39], this);
-            }
-        }
-
-        public void Pressed40(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed40], this);
-            }
-        }
-
-        public void Pressed41(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed41], this);
-            }
-        }
-
-        public void Pressed42(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed42], this);
-            }
-        }
-
-        public void Pressed43(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed43], this);
-            }
-        }
-
-        public void Pressed44(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed44], this);
-            }
-        }
-
-        public void Pressed45(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed45], this);
-            }
-        }
-
-        public void Pressed46(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed46], this);
-            }
-        }
-
-        public void Pressed47(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed47], this);
-            }
-        }
-
-        public void Pressed48(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed48], this);
-            }
-        }
-
-        public void Pressed49(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed49], this);
-            }
-        }
-
-        public void Pressed50(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed50], this);
-            }
-        }
-
-        public void Pressed51(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed51], this);
-            }
-        }
-
-        public void Pressed52(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed52], this);
-            }
-        }
-
-        public void Pressed53(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed53], this);
-            }
-        }
-
-        public void Pressed54(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed54], this);
-            }
-        }
-
-        public void Pressed55(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed55], this);
-            }
-        }
-
-        public void Pressed56(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed56], this);
-            }
-        }
-
-        public void Pressed57(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed57], this);
-            }
-        }
-
-        public void Pressed58(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed58], this);
-            }
-        }
-
-        public void Pressed59(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed59], this);
-            }
-        }
-
-        public void Pressed60(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed60], this);
-            }
-        }
-
-        public void Pressed61(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed61], this);
-            }
-        }
-
-        public void Pressed62(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed62], this);
-            }
-        }
-
-        public void Pressed63(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed63], this);
-            }
-        }
-
-        public void Pressed64(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed64], this);
-            }
-        }
-
-        public void Pressed65(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed65], this);
-            }
-        }
-
-        public void Pressed66(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed66], this);
-            }
-        }
-
-        public void Pressed67(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed67], this);
-            }
-        }
-
-        public void Pressed68(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed68], this);
-            }
-        }
-
-        public void Pressed69(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed69], this);
-            }
-        }
-
-        public void Pressed70(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed70], this);
-            }
-        }
-
-        public void Pressed71(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed71], this);
-            }
-        }
-
-        public void Pressed72(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed72], this);
-            }
-        }
-
-        public void Pressed73(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed73], this);
-            }
-        }
-
-        public void Pressed74(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed74], this);
-            }
-        }
-
-        public void Pressed75(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed75], this);
-            }
-        }
-
-        public void Pressed76(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed76], this);
-            }
-        }
-
-        public void Pressed77(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed77], this);
-            }
-        }
-
-        public void Pressed78(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed78], this);
-            }
-        }
-
-        public void Pressed79(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed79], this);
-            }
-        }
-
-        public void Pressed80(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed80], this);
-            }
-        }
-
-        public void Pressed81(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed81], this);
-            }
-        }
-
-        public void Pressed82(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed82], this);
-            }
-        }
-
-        public void Pressed83(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed83], this);
-            }
-        }
-
-        public void Pressed84(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed84], this);
-            }
-        }
-
-        public void Pressed85(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed85], this);
-            }
-        }
-
-        public void Pressed86(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed86], this);
-            }
-        }
-
-        public void Pressed87(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed87], this);
-            }
-        }
-
-        public void Pressed88(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed88], this);
-            }
-        }
-
-        public void Pressed89(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed89], this);
-            }
-        }
-
-        public void Pressed90(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed90], this);
-            }
-        }
-
-        public void Pressed91(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed91], this);
-            }
-        }
-
-        public void Pressed92(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed92], this);
-            }
-        }
-
-        public void Pressed93(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed93], this);
-            }
-        }
-
-        public void Pressed94(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed94], this);
-            }
-        }
-
-        public void Pressed95(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed95], this);
-            }
-        }
-
-        public void Pressed96(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed96], this);
-            }
-        }
-
-        public void Pressed97(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed97], this);
-            }
-        }
-
-        public void Pressed98(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed98], this);
-            }
-        }
-
-        public void Pressed99(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed99], this);
-            }
-        }
-
-        public void Pressed100(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed100], this);
-            }
-        }
-
-        public void Pressed101(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed101], this);
-            }
-        }
-
-        public void Pressed102(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed102], this);
-            }
-        }
-
-        public void Pressed103(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed103], this);
-            }
-        }
-
-        public void Pressed104(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed104], this);
-            }
-        }
-
-        public void Pressed105(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed105], this);
-            }
-        }
-
-        public void Pressed106(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed106], this);
-            }
-        }
-
-        public void Pressed107(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed107], this);
-            }
-        }
-
-        public void Pressed108(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed108], this);
-            }
-        }
-
-        public void Pressed109(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed109], this);
-            }
-        }
-
-        public void Pressed110(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed110], this);
-            }
-        }
-
-        public void Pressed111(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed111], this);
-            }
-        }
-
-        public void Pressed112(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed112], this);
-            }
-        }
-
-        public void Pressed113(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed113], this);
-            }
-        }
-
-        public void Pressed114(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed114], this);
-            }
-        }
-
-        public void Pressed115(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed115], this);
-            }
-        }
-
-        public void Pressed116(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed116], this);
-            }
-        }
-
-        public void Pressed117(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed117], this);
-            }
-        }
-
-        public void Pressed118(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed118], this);
-            }
-        }
-
-        public void Pressed119(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed119], this);
-            }
-        }
-
-        public void Pressed120(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed120], this);
-            }
-        }
-
-        public void Pressed121(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed121], this);
-            }
-        }
-
-        public void Pressed122(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed122], this);
-            }
-        }
-
-        public void Pressed123(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed123], this);
-            }
-        }
-
-        public void Pressed124(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed124], this);
-            }
-        }
-
-        public void Pressed125(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed125], this);
-            }
-        }
-
-        public void Pressed126(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed126], this);
-            }
-        }
-
-        public void Pressed127(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed127], this);
-            }
-        }
-
-        public void Pressed128(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed128], this);
-            }
-        }
-
-        public void Pressed129(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed129], this);
-            }
-        }
-
-        public void Pressed130(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed130], this);
-            }
-        }
-
-        public void Pressed131(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed131], this);
-            }
-        }
-
-        public void Pressed132(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed132], this);
-            }
-        }
-
-        public void Pressed133(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed133], this);
-            }
-        }
-
-        public void Pressed134(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed134], this);
-            }
-        }
-
-        public void Pressed135(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed135], this);
-            }
-        }
-
-        public void Pressed136(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed136], this);
-            }
-        }
-
-        public void Pressed137(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed137], this);
-            }
-        }
-
-        public void Pressed138(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed138], this);
-            }
-        }
-
-        public void Pressed139(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed139], this);
-            }
-        }
-
-        public void Pressed140(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed140], this);
-            }
-        }
-
-        public void Pressed141(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed141], this);
-            }
-        }
-
-        public void Pressed142(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed142], this);
-            }
-        }
-
-        public void Pressed143(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed143], this);
-            }
-        }
-
-        public void Pressed144(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed144], this);
-            }
-        }
-
-        public void Pressed145(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed145], this);
-            }
-        }
-
-        public void Pressed146(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed146], this);
-            }
-        }
-
-        public void Pressed147(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed147], this);
-            }
-        }
-
-        public void Pressed148(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed148], this);
-            }
-        }
-
-        public void Pressed149(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed149], this);
-            }
-        }
-
-        public void Pressed150(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed150], this);
-            }
-        }
-
-        public void Pressed151(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed151], this);
-            }
-        }
-
-        public void Pressed152(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed152], this);
-            }
-        }
-
-        public void Pressed153(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed153], this);
-            }
-        }
-
-        public void Pressed154(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed154], this);
-            }
-        }
-
-        public void Pressed155(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed155], this);
-            }
-        }
-
-        public void Pressed156(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed156], this);
-            }
-        }
-
-        public void Pressed157(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed157], this);
-            }
-        }
-
-        public void Pressed158(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed158], this);
-            }
-        }
-
-        public void Pressed159(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed159], this);
-            }
-        }
-
-        public void Pressed160(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed160], this);
-            }
-        }
-
-        public void Pressed161(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed161], this);
-            }
-        }
-
-        public void Pressed162(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed162], this);
-            }
-        }
-
-        public void Pressed163(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed163], this);
-            }
-        }
-
-        public void Pressed164(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed164], this);
-            }
-        }
-
-        public void Pressed165(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed165], this);
-            }
-        }
-
-        public void Pressed166(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed166], this);
-            }
-        }
-
-        public void Pressed167(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed167], this);
-            }
-        }
-
-        public void Pressed168(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed168], this);
-            }
-        }
-
-        public void Pressed169(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed169], this);
-            }
-        }
-
-        public void Pressed170(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed170], this);
-            }
-        }
-
-        public void Pressed171(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed171], this);
-            }
-        }
-
-        public void Pressed172(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed172], this);
-            }
-        }
-
-        public void Pressed173(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed173], this);
-            }
-        }
-
-        public void Pressed174(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed174], this);
-            }
-        }
-
-        public void Pressed175(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed175], this);
-            }
-        }
-
-        public void Pressed176(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed176], this);
-            }
-        }
-
-        public void Pressed177(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed177], this);
-            }
-        }
-
-        public void Pressed178(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed178], this);
-            }
-        }
-
-        public void Pressed179(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed179], this);
-            }
-        }
-
-        public void Pressed180(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed180], this);
-            }
-        }
-
-        public void Pressed181(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed181], this);
-            }
-        }
-
-        public void Pressed182(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed182], this);
-            }
-        }
-
-        public void Pressed183(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed183], this);
-            }
-        }
-
-        public void Pressed184(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed184], this);
-            }
-        }
-
-        public void Pressed185(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed185], this);
-            }
-        }
-
-        public void Pressed186(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed186], this);
-            }
-        }
-
-        public void Pressed187(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed187], this);
-            }
-        }
-
-        public void Pressed188(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed188], this);
-            }
-        }
-
-        public void Pressed189(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed189], this);
-            }
-        }
-
-        public void Pressed190(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed190], this);
-            }
-        }
-
-        public void Pressed191(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed191], this);
-            }
-        }
-
-        public void Pressed192(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed192], this);
-            }
-        }
-
-        public void Pressed193(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed193], this);
-            }
-        }
-
-        public void Pressed194(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed194], this);
-            }
-        }
-
-        public void Pressed195(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed195], this);
-            }
-        }
-
-        public void Pressed196(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed196], this);
-            }
-        }
-
-        public void Pressed197(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed197], this);
-            }
-        }
-
-        public void Pressed198(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed198], this);
-            }
-        }
-
-        public void Pressed199(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed199], this);
-            }
-        }
-
-        public void Pressed200(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed200], this);
-            }
-        }
-
-        public void Pressed201(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed201], this);
-            }
-        }
-
-        public void Pressed202(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed202], this);
-            }
-        }
-
-        public void Pressed203(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed203], this);
-            }
-        }
-
-        public void Pressed204(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed204], this);
-            }
-        }
-
-        public void Pressed205(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed205], this);
-            }
-        }
-
-        public void Pressed206(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed206], this);
-            }
-        }
-
-        public void Pressed207(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed207], this);
-            }
-        }
-
-        public void Pressed208(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed208], this);
-            }
-        }
-
-        public void Pressed209(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed209], this);
-            }
-        }
-
-        public void Pressed210(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed210], this);
-            }
-        }
-
-        public void Pressed211(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed211], this);
-            }
-        }
-
-        public void Pressed212(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed212], this);
-            }
-        }
-
-        public void Pressed213(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed213], this);
-            }
-        }
-
-        public void Pressed214(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed214], this);
-            }
-        }
-
-        public void Pressed215(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed215], this);
-            }
-        }
-
-        public void Pressed216(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed216], this);
-            }
-        }
-
-        public void Pressed217(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed217], this);
-            }
-        }
-
-        public void Pressed218(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed218], this);
-            }
-        }
-
-        public void Pressed219(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed219], this);
-            }
-        }
-
-        public void Pressed220(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed220], this);
-            }
-        }
-
-        public void Pressed221(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed221], this);
-            }
-        }
-
-        public void Pressed222(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed222], this);
-            }
-        }
-
-        public void Pressed223(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed223], this);
-            }
-        }
-
-        public void Pressed224(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed224], this);
-            }
-        }
-
-        public void Pressed225(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed225], this);
-            }
-        }
-
-        public void Pressed226(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed226], this);
-            }
-        }
-
-        public void Pressed227(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed227], this);
-            }
-        }
-
-        public void Pressed228(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed228], this);
-            }
-        }
-
-        public void Pressed229(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed229], this);
-            }
-        }
-
-        public void Pressed230(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed230], this);
-            }
-        }
-
-        public void Pressed231(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed231], this);
-            }
-        }
-
-        public void Pressed232(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed232], this);
-            }
-        }
-
-        public void Pressed233(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed233], this);
-            }
-        }
-
-        public void Pressed234(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed234], this);
-            }
-        }
-
-        public void Pressed235(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed235], this);
-            }
-        }
-
-        public void Pressed236(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed236], this);
-            }
-        }
-
-        public void Pressed237(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed237], this);
-            }
-        }
-
-        public void Pressed238(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed238], this);
-            }
-        }
-
-        public void Pressed239(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed239], this);
-            }
-        }
-
-        public void Pressed240(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed240], this);
-            }
-        }
-
-        public void Pressed241(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed241], this);
-            }
-        }
-
-        public void Pressed242(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed242], this);
-            }
-        }
-
-        public void Pressed243(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed243], this);
-            }
-        }
-
-        public void Pressed244(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed244], this);
-            }
-        }
-
-        public void Pressed245(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed245], this);
-            }
-        }
-
-        public void Pressed246(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed246], this);
-            }
-        }
-
-        public void Pressed247(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed247], this);
-            }
-        }
-
-        public void Pressed248(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed248], this);
-            }
-        }
-
-        public void Pressed249(ZonesBoolInputSigDelegate callback)
-        {
-            for (int index = 0; index < Devices.Count; index++)
-            {
-                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed249], this);
-            }
-        }
-
-        public void Pressed0(ZonesBoolInputSigDelegate callback)
+        public void Pressed0(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
@@ -5843,2004 +3348,2003 @@ namespace CBlink
             }
         }
 
-
-        public void Zone1(ZonesStringInputSigDelegate callback)
+        public void Pressed1(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone1], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed1], this);
             }
         }
 
-        public void Zone2(ZonesStringInputSigDelegate callback)
+        public void Pressed2(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone2], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed2], this);
             }
         }
 
-        public void Zone3(ZonesStringInputSigDelegate callback)
+        public void Pressed3(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone3], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed3], this);
             }
         }
 
-        public void Zone4(ZonesStringInputSigDelegate callback)
+        public void Pressed4(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone4], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed4], this);
             }
         }
 
-        public void Zone5(ZonesStringInputSigDelegate callback)
+        public void Pressed5(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone5], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed5], this);
             }
         }
 
-        public void Zone6(ZonesStringInputSigDelegate callback)
+        public void Pressed6(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone6], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed6], this);
             }
         }
 
-        public void Zone7(ZonesStringInputSigDelegate callback)
+        public void Pressed7(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone7], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed7], this);
             }
         }
 
-        public void Zone8(ZonesStringInputSigDelegate callback)
+        public void Pressed8(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone8], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed8], this);
             }
         }
 
-        public void Zone9(ZonesStringInputSigDelegate callback)
+        public void Pressed9(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone9], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed9], this);
             }
         }
 
-        public void Zone10(ZonesStringInputSigDelegate callback)
+        public void Pressed10(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone10], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed10], this);
             }
         }
 
-        public void Zone11(ZonesStringInputSigDelegate callback)
+        public void Pressed11(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone11], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed11], this);
             }
         }
 
-        public void Zone12(ZonesStringInputSigDelegate callback)
+        public void Pressed12(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone12], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed12], this);
             }
         }
 
-        public void Zone13(ZonesStringInputSigDelegate callback)
+        public void Pressed13(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone13], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed13], this);
             }
         }
 
-        public void Zone14(ZonesStringInputSigDelegate callback)
+        public void Pressed14(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone14], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed14], this);
             }
         }
 
-        public void Zone15(ZonesStringInputSigDelegate callback)
+        public void Pressed15(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone15], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed15], this);
             }
         }
 
-        public void Zone16(ZonesStringInputSigDelegate callback)
+        public void Pressed16(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone16], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed16], this);
             }
         }
 
-        public void Zone17(ZonesStringInputSigDelegate callback)
+        public void Pressed17(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone17], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed17], this);
             }
         }
 
-        public void Zone18(ZonesStringInputSigDelegate callback)
+        public void Pressed18(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone18], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed18], this);
             }
         }
 
-        public void Zone19(ZonesStringInputSigDelegate callback)
+        public void Pressed19(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone19], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed19], this);
             }
         }
 
-        public void Zone20(ZonesStringInputSigDelegate callback)
+        public void Pressed20(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone20], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed20], this);
             }
         }
 
-        public void Zone21(ZonesStringInputSigDelegate callback)
+        public void Pressed21(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone21], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed21], this);
             }
         }
 
-        public void Zone22(ZonesStringInputSigDelegate callback)
+        public void Pressed22(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone22], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed22], this);
             }
         }
 
-        public void Zone23(ZonesStringInputSigDelegate callback)
+        public void Pressed23(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone23], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed23], this);
             }
         }
 
-        public void Zone24(ZonesStringInputSigDelegate callback)
+        public void Pressed24(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone24], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed24], this);
             }
         }
 
-        public void Zone25(ZonesStringInputSigDelegate callback)
+        public void Pressed25(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone25], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed25], this);
             }
         }
 
-        public void Zone26(ZonesStringInputSigDelegate callback)
+        public void Pressed26(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone26], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed26], this);
             }
         }
 
-        public void Zone27(ZonesStringInputSigDelegate callback)
+        public void Pressed27(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone27], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed27], this);
             }
         }
 
-        public void Zone28(ZonesStringInputSigDelegate callback)
+        public void Pressed28(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone28], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed28], this);
             }
         }
 
-        public void Zone29(ZonesStringInputSigDelegate callback)
+        public void Pressed29(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone29], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed29], this);
             }
         }
 
-        public void Zone30(ZonesStringInputSigDelegate callback)
+        public void Pressed30(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone30], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed30], this);
             }
         }
 
-        public void Zone31(ZonesStringInputSigDelegate callback)
+        public void Pressed31(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone31], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed31], this);
             }
         }
 
-        public void Zone32(ZonesStringInputSigDelegate callback)
+        public void Pressed32(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone32], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed32], this);
             }
         }
 
-        public void Zone33(ZonesStringInputSigDelegate callback)
+        public void Pressed33(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone33], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed33], this);
             }
         }
 
-        public void Zone34(ZonesStringInputSigDelegate callback)
+        public void Pressed34(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone34], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed34], this);
             }
         }
 
-        public void Zone35(ZonesStringInputSigDelegate callback)
+        public void Pressed35(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone35], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed35], this);
             }
         }
 
-        public void Zone36(ZonesStringInputSigDelegate callback)
+        public void Pressed36(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone36], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed36], this);
             }
         }
 
-        public void Zone37(ZonesStringInputSigDelegate callback)
+        public void Pressed37(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone37], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed37], this);
             }
         }
 
-        public void Zone38(ZonesStringInputSigDelegate callback)
+        public void Pressed38(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone38], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed38], this);
             }
         }
 
-        public void Zone39(ZonesStringInputSigDelegate callback)
+        public void Pressed39(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone39], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed39], this);
             }
         }
 
-        public void Zone40(ZonesStringInputSigDelegate callback)
+        public void Pressed40(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone40], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed40], this);
             }
         }
 
-        public void Zone41(ZonesStringInputSigDelegate callback)
+        public void Pressed41(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone41], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed41], this);
             }
         }
 
-        public void Zone42(ZonesStringInputSigDelegate callback)
+        public void Pressed42(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone42], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed42], this);
             }
         }
 
-        public void Zone43(ZonesStringInputSigDelegate callback)
+        public void Pressed43(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone43], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed43], this);
             }
         }
 
-        public void Zone44(ZonesStringInputSigDelegate callback)
+        public void Pressed44(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone44], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed44], this);
             }
         }
 
-        public void Zone45(ZonesStringInputSigDelegate callback)
+        public void Pressed45(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone45], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed45], this);
             }
         }
 
-        public void Zone46(ZonesStringInputSigDelegate callback)
+        public void Pressed46(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone46], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed46], this);
             }
         }
 
-        public void Zone47(ZonesStringInputSigDelegate callback)
+        public void Pressed47(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone47], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed47], this);
             }
         }
 
-        public void Zone48(ZonesStringInputSigDelegate callback)
+        public void Pressed48(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone48], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed48], this);
             }
         }
 
-        public void Zone49(ZonesStringInputSigDelegate callback)
+        public void Pressed49(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone49], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed49], this);
             }
         }
 
-        public void Zone50(ZonesStringInputSigDelegate callback)
+        public void Pressed50(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone50], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed50], this);
             }
         }
 
-        public void Zone51(ZonesStringInputSigDelegate callback)
+        public void Pressed51(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone51], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed51], this);
             }
         }
 
-        public void Zone52(ZonesStringInputSigDelegate callback)
+        public void Pressed52(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone52], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed52], this);
             }
         }
 
-        public void Zone53(ZonesStringInputSigDelegate callback)
+        public void Pressed53(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone53], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed53], this);
             }
         }
 
-        public void Zone54(ZonesStringInputSigDelegate callback)
+        public void Pressed54(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone54], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed54], this);
             }
         }
 
-        public void Zone55(ZonesStringInputSigDelegate callback)
+        public void Pressed55(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone55], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed55], this);
             }
         }
 
-        public void Zone56(ZonesStringInputSigDelegate callback)
+        public void Pressed56(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone56], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed56], this);
             }
         }
 
-        public void Zone57(ZonesStringInputSigDelegate callback)
+        public void Pressed57(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone57], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed57], this);
             }
         }
 
-        public void Zone58(ZonesStringInputSigDelegate callback)
+        public void Pressed58(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone58], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed58], this);
             }
         }
 
-        public void Zone59(ZonesStringInputSigDelegate callback)
+        public void Pressed59(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone59], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed59], this);
             }
         }
 
-        public void Zone60(ZonesStringInputSigDelegate callback)
+        public void Pressed60(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone60], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed60], this);
             }
         }
 
-        public void Zone61(ZonesStringInputSigDelegate callback)
+        public void Pressed61(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone61], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed61], this);
             }
         }
 
-        public void Zone62(ZonesStringInputSigDelegate callback)
+        public void Pressed62(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone62], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed62], this);
             }
         }
 
-        public void Zone63(ZonesStringInputSigDelegate callback)
+        public void Pressed63(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone63], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed63], this);
             }
         }
 
-        public void Zone64(ZonesStringInputSigDelegate callback)
+        public void Pressed64(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone64], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed64], this);
             }
         }
 
-        public void Zone65(ZonesStringInputSigDelegate callback)
+        public void Pressed65(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone65], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed65], this);
             }
         }
 
-        public void Zone66(ZonesStringInputSigDelegate callback)
+        public void Pressed66(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone66], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed66], this);
             }
         }
 
-        public void Zone67(ZonesStringInputSigDelegate callback)
+        public void Pressed67(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone67], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed67], this);
             }
         }
 
-        public void Zone68(ZonesStringInputSigDelegate callback)
+        public void Pressed68(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone68], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed68], this);
             }
         }
 
-        public void Zone69(ZonesStringInputSigDelegate callback)
+        public void Pressed69(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone69], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed69], this);
             }
         }
 
-        public void Zone70(ZonesStringInputSigDelegate callback)
+        public void Pressed70(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone70], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed70], this);
             }
         }
 
-        public void Zone71(ZonesStringInputSigDelegate callback)
+        public void Pressed71(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone71], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed71], this);
             }
         }
 
-        public void Zone72(ZonesStringInputSigDelegate callback)
+        public void Pressed72(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone72], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed72], this);
             }
         }
 
-        public void Zone73(ZonesStringInputSigDelegate callback)
+        public void Pressed73(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone73], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed73], this);
             }
         }
 
-        public void Zone74(ZonesStringInputSigDelegate callback)
+        public void Pressed74(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone74], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed74], this);
             }
         }
 
-        public void Zone75(ZonesStringInputSigDelegate callback)
+        public void Pressed75(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone75], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed75], this);
             }
         }
 
-        public void Zone76(ZonesStringInputSigDelegate callback)
+        public void Pressed76(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone76], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed76], this);
             }
         }
 
-        public void Zone77(ZonesStringInputSigDelegate callback)
+        public void Pressed77(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone77], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed77], this);
             }
         }
 
-        public void Zone78(ZonesStringInputSigDelegate callback)
+        public void Pressed78(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone78], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed78], this);
             }
         }
 
-        public void Zone79(ZonesStringInputSigDelegate callback)
+        public void Pressed79(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone79], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed79], this);
             }
         }
 
-        public void Zone80(ZonesStringInputSigDelegate callback)
+        public void Pressed80(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone80], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed80], this);
             }
         }
 
-        public void Zone81(ZonesStringInputSigDelegate callback)
+        public void Pressed81(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone81], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed81], this);
             }
         }
 
-        public void Zone82(ZonesStringInputSigDelegate callback)
+        public void Pressed82(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone82], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed82], this);
             }
         }
 
-        public void Zone83(ZonesStringInputSigDelegate callback)
+        public void Pressed83(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone83], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed83], this);
             }
         }
 
-        public void Zone84(ZonesStringInputSigDelegate callback)
+        public void Pressed84(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone84], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed84], this);
             }
         }
 
-        public void Zone85(ZonesStringInputSigDelegate callback)
+        public void Pressed85(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone85], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed85], this);
             }
         }
 
-        public void Zone86(ZonesStringInputSigDelegate callback)
+        public void Pressed86(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone86], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed86], this);
             }
         }
 
-        public void Zone87(ZonesStringInputSigDelegate callback)
+        public void Pressed87(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone87], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed87], this);
             }
         }
 
-        public void Zone88(ZonesStringInputSigDelegate callback)
+        public void Pressed88(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone88], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed88], this);
             }
         }
 
-        public void Zone89(ZonesStringInputSigDelegate callback)
+        public void Pressed89(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone89], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed89], this);
             }
         }
 
-        public void Zone90(ZonesStringInputSigDelegate callback)
+        public void Pressed90(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone90], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed90], this);
             }
         }
 
-        public void Zone91(ZonesStringInputSigDelegate callback)
+        public void Pressed91(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone91], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed91], this);
             }
         }
 
-        public void Zone92(ZonesStringInputSigDelegate callback)
+        public void Pressed92(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone92], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed92], this);
             }
         }
 
-        public void Zone93(ZonesStringInputSigDelegate callback)
+        public void Pressed93(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone93], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed93], this);
             }
         }
 
-        public void Zone94(ZonesStringInputSigDelegate callback)
+        public void Pressed94(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone94], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed94], this);
             }
         }
 
-        public void Zone95(ZonesStringInputSigDelegate callback)
+        public void Pressed95(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone95], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed95], this);
             }
         }
 
-        public void Zone96(ZonesStringInputSigDelegate callback)
+        public void Pressed96(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone96], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed96], this);
             }
         }
 
-        public void Zone97(ZonesStringInputSigDelegate callback)
+        public void Pressed97(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone97], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed97], this);
             }
         }
 
-        public void Zone98(ZonesStringInputSigDelegate callback)
+        public void Pressed98(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone98], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed98], this);
             }
         }
 
-        public void Zone99(ZonesStringInputSigDelegate callback)
+        public void Pressed99(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone99], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed99], this);
             }
         }
 
-        public void Zone100(ZonesStringInputSigDelegate callback)
+        public void Pressed100(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone100], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed100], this);
             }
         }
 
-        public void Zone101(ZonesStringInputSigDelegate callback)
+        public void Pressed101(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone101], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed101], this);
             }
         }
 
-        public void Zone102(ZonesStringInputSigDelegate callback)
+        public void Pressed102(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone102], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed102], this);
             }
         }
 
-        public void Zone103(ZonesStringInputSigDelegate callback)
+        public void Pressed103(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone103], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed103], this);
             }
         }
 
-        public void Zone104(ZonesStringInputSigDelegate callback)
+        public void Pressed104(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone104], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed104], this);
             }
         }
 
-        public void Zone105(ZonesStringInputSigDelegate callback)
+        public void Pressed105(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone105], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed105], this);
             }
         }
 
-        public void Zone106(ZonesStringInputSigDelegate callback)
+        public void Pressed106(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone106], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed106], this);
             }
         }
 
-        public void Zone107(ZonesStringInputSigDelegate callback)
+        public void Pressed107(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone107], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed107], this);
             }
         }
 
-        public void Zone108(ZonesStringInputSigDelegate callback)
+        public void Pressed108(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone108], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed108], this);
             }
         }
 
-        public void Zone109(ZonesStringInputSigDelegate callback)
+        public void Pressed109(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone109], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed109], this);
             }
         }
 
-        public void Zone110(ZonesStringInputSigDelegate callback)
+        public void Pressed110(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone110], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed110], this);
             }
         }
 
-        public void Zone111(ZonesStringInputSigDelegate callback)
+        public void Pressed111(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone111], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed111], this);
             }
         }
 
-        public void Zone112(ZonesStringInputSigDelegate callback)
+        public void Pressed112(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone112], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed112], this);
             }
         }
 
-        public void Zone113(ZonesStringInputSigDelegate callback)
+        public void Pressed113(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone113], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed113], this);
             }
         }
 
-        public void Zone114(ZonesStringInputSigDelegate callback)
+        public void Pressed114(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone114], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed114], this);
             }
         }
 
-        public void Zone115(ZonesStringInputSigDelegate callback)
+        public void Pressed115(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone115], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed115], this);
             }
         }
 
-        public void Zone116(ZonesStringInputSigDelegate callback)
+        public void Pressed116(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone116], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed116], this);
             }
         }
 
-        public void Zone117(ZonesStringInputSigDelegate callback)
+        public void Pressed117(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone117], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed117], this);
             }
         }
 
-        public void Zone118(ZonesStringInputSigDelegate callback)
+        public void Pressed118(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone118], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed118], this);
             }
         }
 
-        public void Zone119(ZonesStringInputSigDelegate callback)
+        public void Pressed119(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone119], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed119], this);
             }
         }
 
-        public void Zone120(ZonesStringInputSigDelegate callback)
+        public void Pressed120(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone120], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed120], this);
             }
         }
 
-        public void Zone121(ZonesStringInputSigDelegate callback)
+        public void Pressed121(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone121], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed121], this);
             }
         }
 
-        public void Zone122(ZonesStringInputSigDelegate callback)
+        public void Pressed122(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone122], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed122], this);
             }
         }
 
-        public void Zone123(ZonesStringInputSigDelegate callback)
+        public void Pressed123(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone123], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed123], this);
             }
         }
 
-        public void Zone124(ZonesStringInputSigDelegate callback)
+        public void Pressed124(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone124], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed124], this);
             }
         }
 
-        public void Zone125(ZonesStringInputSigDelegate callback)
+        public void Pressed125(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone125], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed125], this);
             }
         }
 
-        public void Zone126(ZonesStringInputSigDelegate callback)
+        public void Pressed126(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone126], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed126], this);
             }
         }
 
-        public void Zone127(ZonesStringInputSigDelegate callback)
+        public void Pressed127(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone127], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed127], this);
             }
         }
 
-        public void Zone128(ZonesStringInputSigDelegate callback)
+        public void Pressed128(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone128], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed128], this);
             }
         }
 
-        public void Zone129(ZonesStringInputSigDelegate callback)
+        public void Pressed129(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone129], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed129], this);
             }
         }
 
-        public void Zone130(ZonesStringInputSigDelegate callback)
+        public void Pressed130(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone130], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed130], this);
             }
         }
 
-        public void Zone131(ZonesStringInputSigDelegate callback)
+        public void Pressed131(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone131], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed131], this);
             }
         }
 
-        public void Zone132(ZonesStringInputSigDelegate callback)
+        public void Pressed132(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone132], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed132], this);
             }
         }
 
-        public void Zone133(ZonesStringInputSigDelegate callback)
+        public void Pressed133(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone133], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed133], this);
             }
         }
 
-        public void Zone134(ZonesStringInputSigDelegate callback)
+        public void Pressed134(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone134], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed134], this);
             }
         }
 
-        public void Zone135(ZonesStringInputSigDelegate callback)
+        public void Pressed135(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone135], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed135], this);
             }
         }
 
-        public void Zone136(ZonesStringInputSigDelegate callback)
+        public void Pressed136(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone136], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed136], this);
             }
         }
 
-        public void Zone137(ZonesStringInputSigDelegate callback)
+        public void Pressed137(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone137], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed137], this);
             }
         }
 
-        public void Zone138(ZonesStringInputSigDelegate callback)
+        public void Pressed138(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone138], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed138], this);
             }
         }
 
-        public void Zone139(ZonesStringInputSigDelegate callback)
+        public void Pressed139(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone139], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed139], this);
             }
         }
 
-        public void Zone140(ZonesStringInputSigDelegate callback)
+        public void Pressed140(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone140], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed140], this);
             }
         }
 
-        public void Zone141(ZonesStringInputSigDelegate callback)
+        public void Pressed141(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone141], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed141], this);
             }
         }
 
-        public void Zone142(ZonesStringInputSigDelegate callback)
+        public void Pressed142(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone142], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed142], this);
             }
         }
 
-        public void Zone143(ZonesStringInputSigDelegate callback)
+        public void Pressed143(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone143], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed143], this);
             }
         }
 
-        public void Zone144(ZonesStringInputSigDelegate callback)
+        public void Pressed144(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone144], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed144], this);
             }
         }
 
-        public void Zone145(ZonesStringInputSigDelegate callback)
+        public void Pressed145(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone145], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed145], this);
             }
         }
 
-        public void Zone146(ZonesStringInputSigDelegate callback)
+        public void Pressed146(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone146], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed146], this);
             }
         }
 
-        public void Zone147(ZonesStringInputSigDelegate callback)
+        public void Pressed147(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone147], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed147], this);
             }
         }
 
-        public void Zone148(ZonesStringInputSigDelegate callback)
+        public void Pressed148(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone148], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed148], this);
             }
         }
 
-        public void Zone149(ZonesStringInputSigDelegate callback)
+        public void Pressed149(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone149], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed149], this);
             }
         }
 
-        public void Zone150(ZonesStringInputSigDelegate callback)
+        public void Pressed150(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone150], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed150], this);
             }
         }
 
-        public void Zone151(ZonesStringInputSigDelegate callback)
+        public void Pressed151(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone151], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed151], this);
             }
         }
 
-        public void Zone152(ZonesStringInputSigDelegate callback)
+        public void Pressed152(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone152], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed152], this);
             }
         }
 
-        public void Zone153(ZonesStringInputSigDelegate callback)
+        public void Pressed153(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone153], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed153], this);
             }
         }
 
-        public void Zone154(ZonesStringInputSigDelegate callback)
+        public void Pressed154(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone154], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed154], this);
             }
         }
 
-        public void Zone155(ZonesStringInputSigDelegate callback)
+        public void Pressed155(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone155], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed155], this);
             }
         }
 
-        public void Zone156(ZonesStringInputSigDelegate callback)
+        public void Pressed156(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone156], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed156], this);
             }
         }
 
-        public void Zone157(ZonesStringInputSigDelegate callback)
+        public void Pressed157(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone157], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed157], this);
             }
         }
 
-        public void Zone158(ZonesStringInputSigDelegate callback)
+        public void Pressed158(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone158], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed158], this);
             }
         }
 
-        public void Zone159(ZonesStringInputSigDelegate callback)
+        public void Pressed159(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone159], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed159], this);
             }
         }
 
-        public void Zone160(ZonesStringInputSigDelegate callback)
+        public void Pressed160(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone160], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed160], this);
             }
         }
 
-        public void Zone161(ZonesStringInputSigDelegate callback)
+        public void Pressed161(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone161], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed161], this);
             }
         }
 
-        public void Zone162(ZonesStringInputSigDelegate callback)
+        public void Pressed162(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone162], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed162], this);
             }
         }
 
-        public void Zone163(ZonesStringInputSigDelegate callback)
+        public void Pressed163(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone163], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed163], this);
             }
         }
 
-        public void Zone164(ZonesStringInputSigDelegate callback)
+        public void Pressed164(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone164], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed164], this);
             }
         }
 
-        public void Zone165(ZonesStringInputSigDelegate callback)
+        public void Pressed165(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone165], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed165], this);
             }
         }
 
-        public void Zone166(ZonesStringInputSigDelegate callback)
+        public void Pressed166(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone166], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed166], this);
             }
         }
 
-        public void Zone167(ZonesStringInputSigDelegate callback)
+        public void Pressed167(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone167], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed167], this);
             }
         }
 
-        public void Zone168(ZonesStringInputSigDelegate callback)
+        public void Pressed168(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone168], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed168], this);
             }
         }
 
-        public void Zone169(ZonesStringInputSigDelegate callback)
+        public void Pressed169(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone169], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed169], this);
             }
         }
 
-        public void Zone170(ZonesStringInputSigDelegate callback)
+        public void Pressed170(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone170], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed170], this);
             }
         }
 
-        public void Zone171(ZonesStringInputSigDelegate callback)
+        public void Pressed171(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone171], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed171], this);
             }
         }
 
-        public void Zone172(ZonesStringInputSigDelegate callback)
+        public void Pressed172(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone172], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed172], this);
             }
         }
 
-        public void Zone173(ZonesStringInputSigDelegate callback)
+        public void Pressed173(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone173], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed173], this);
             }
         }
 
-        public void Zone174(ZonesStringInputSigDelegate callback)
+        public void Pressed174(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone174], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed174], this);
             }
         }
 
-        public void Zone175(ZonesStringInputSigDelegate callback)
+        public void Pressed175(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone175], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed175], this);
             }
         }
 
-        public void Zone176(ZonesStringInputSigDelegate callback)
+        public void Pressed176(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone176], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed176], this);
             }
         }
 
-        public void Zone177(ZonesStringInputSigDelegate callback)
+        public void Pressed177(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone177], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed177], this);
             }
         }
 
-        public void Zone178(ZonesStringInputSigDelegate callback)
+        public void Pressed178(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone178], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed178], this);
             }
         }
 
-        public void Zone179(ZonesStringInputSigDelegate callback)
+        public void Pressed179(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone179], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed179], this);
             }
         }
 
-        public void Zone180(ZonesStringInputSigDelegate callback)
+        public void Pressed180(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone180], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed180], this);
             }
         }
 
-        public void Zone181(ZonesStringInputSigDelegate callback)
+        public void Pressed181(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone181], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed181], this);
             }
         }
 
-        public void Zone182(ZonesStringInputSigDelegate callback)
+        public void Pressed182(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone182], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed182], this);
             }
         }
 
-        public void Zone183(ZonesStringInputSigDelegate callback)
+        public void Pressed183(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone183], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed183], this);
             }
         }
 
-        public void Zone184(ZonesStringInputSigDelegate callback)
+        public void Pressed184(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone184], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed184], this);
             }
         }
 
-        public void Zone185(ZonesStringInputSigDelegate callback)
+        public void Pressed185(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone185], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed185], this);
             }
         }
 
-        public void Zone186(ZonesStringInputSigDelegate callback)
+        public void Pressed186(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone186], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed186], this);
             }
         }
 
-        public void Zone187(ZonesStringInputSigDelegate callback)
+        public void Pressed187(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone187], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed187], this);
             }
         }
 
-        public void Zone188(ZonesStringInputSigDelegate callback)
+        public void Pressed188(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone188], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed188], this);
             }
         }
 
-        public void Zone189(ZonesStringInputSigDelegate callback)
+        public void Pressed189(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone189], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed189], this);
             }
         }
 
-        public void Zone190(ZonesStringInputSigDelegate callback)
+        public void Pressed190(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone190], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed190], this);
             }
         }
 
-        public void Zone191(ZonesStringInputSigDelegate callback)
+        public void Pressed191(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone191], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed191], this);
             }
         }
 
-        public void Zone192(ZonesStringInputSigDelegate callback)
+        public void Pressed192(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone192], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed192], this);
             }
         }
 
-        public void Zone193(ZonesStringInputSigDelegate callback)
+        public void Pressed193(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone193], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed193], this);
             }
         }
 
-        public void Zone194(ZonesStringInputSigDelegate callback)
+        public void Pressed194(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone194], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed194], this);
             }
         }
 
-        public void Zone195(ZonesStringInputSigDelegate callback)
+        public void Pressed195(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone195], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed195], this);
             }
         }
 
-        public void Zone196(ZonesStringInputSigDelegate callback)
+        public void Pressed196(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone196], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed196], this);
             }
         }
 
-        public void Zone197(ZonesStringInputSigDelegate callback)
+        public void Pressed197(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone197], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed197], this);
             }
         }
 
-        public void Zone198(ZonesStringInputSigDelegate callback)
+        public void Pressed198(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone198], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed198], this);
             }
         }
 
-        public void Zone199(ZonesStringInputSigDelegate callback)
+        public void Pressed199(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone199], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed199], this);
             }
         }
 
-        public void Zone200(ZonesStringInputSigDelegate callback)
+        public void Pressed200(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone200], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed200], this);
             }
         }
 
-        public void Zone201(ZonesStringInputSigDelegate callback)
+        public void Pressed201(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone201], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed201], this);
             }
         }
 
-        public void Zone202(ZonesStringInputSigDelegate callback)
+        public void Pressed202(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone202], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed202], this);
             }
         }
 
-        public void Zone203(ZonesStringInputSigDelegate callback)
+        public void Pressed203(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone203], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed203], this);
             }
         }
 
-        public void Zone204(ZonesStringInputSigDelegate callback)
+        public void Pressed204(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone204], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed204], this);
             }
         }
 
-        public void Zone205(ZonesStringInputSigDelegate callback)
+        public void Pressed205(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone205], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed205], this);
             }
         }
 
-        public void Zone206(ZonesStringInputSigDelegate callback)
+        public void Pressed206(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone206], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed206], this);
             }
         }
 
-        public void Zone207(ZonesStringInputSigDelegate callback)
+        public void Pressed207(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone207], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed207], this);
             }
         }
 
-        public void Zone208(ZonesStringInputSigDelegate callback)
+        public void Pressed208(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone208], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed208], this);
             }
         }
 
-        public void Zone209(ZonesStringInputSigDelegate callback)
+        public void Pressed209(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone209], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed209], this);
             }
         }
 
-        public void Zone210(ZonesStringInputSigDelegate callback)
+        public void Pressed210(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone210], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed210], this);
             }
         }
 
-        public void Zone211(ZonesStringInputSigDelegate callback)
+        public void Pressed211(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone211], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed211], this);
             }
         }
 
-        public void Zone212(ZonesStringInputSigDelegate callback)
+        public void Pressed212(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone212], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed212], this);
             }
         }
 
-        public void Zone213(ZonesStringInputSigDelegate callback)
+        public void Pressed213(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone213], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed213], this);
             }
         }
 
-        public void Zone214(ZonesStringInputSigDelegate callback)
+        public void Pressed214(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone214], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed214], this);
             }
         }
 
-        public void Zone215(ZonesStringInputSigDelegate callback)
+        public void Pressed215(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone215], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed215], this);
             }
         }
 
-        public void Zone216(ZonesStringInputSigDelegate callback)
+        public void Pressed216(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone216], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed216], this);
             }
         }
 
-        public void Zone217(ZonesStringInputSigDelegate callback)
+        public void Pressed217(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone217], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed217], this);
             }
         }
 
-        public void Zone218(ZonesStringInputSigDelegate callback)
+        public void Pressed218(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone218], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed218], this);
             }
         }
 
-        public void Zone219(ZonesStringInputSigDelegate callback)
+        public void Pressed219(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone219], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed219], this);
             }
         }
 
-        public void Zone220(ZonesStringInputSigDelegate callback)
+        public void Pressed220(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone220], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed220], this);
             }
         }
 
-        public void Zone221(ZonesStringInputSigDelegate callback)
+        public void Pressed221(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone221], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed221], this);
             }
         }
 
-        public void Zone222(ZonesStringInputSigDelegate callback)
+        public void Pressed222(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone222], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed222], this);
             }
         }
 
-        public void Zone223(ZonesStringInputSigDelegate callback)
+        public void Pressed223(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone223], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed223], this);
             }
         }
 
-        public void Zone224(ZonesStringInputSigDelegate callback)
+        public void Pressed224(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone224], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed224], this);
             }
         }
 
-        public void Zone225(ZonesStringInputSigDelegate callback)
+        public void Pressed225(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone225], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed225], this);
             }
         }
 
-        public void Zone226(ZonesStringInputSigDelegate callback)
+        public void Pressed226(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone226], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed226], this);
             }
         }
 
-        public void Zone227(ZonesStringInputSigDelegate callback)
+        public void Pressed227(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone227], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed227], this);
             }
         }
 
-        public void Zone228(ZonesStringInputSigDelegate callback)
+        public void Pressed228(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone228], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed228], this);
             }
         }
 
-        public void Zone229(ZonesStringInputSigDelegate callback)
+        public void Pressed229(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone229], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed229], this);
             }
         }
 
-        public void Zone230(ZonesStringInputSigDelegate callback)
+        public void Pressed230(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone230], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed230], this);
             }
         }
 
-        public void Zone231(ZonesStringInputSigDelegate callback)
+        public void Pressed231(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone231], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed231], this);
             }
         }
 
-        public void Zone232(ZonesStringInputSigDelegate callback)
+        public void Pressed232(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone232], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed232], this);
             }
         }
 
-        public void Zone233(ZonesStringInputSigDelegate callback)
+        public void Pressed233(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone233], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed233], this);
             }
         }
 
-        public void Zone234(ZonesStringInputSigDelegate callback)
+        public void Pressed234(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone234], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed234], this);
             }
         }
 
-        public void Zone235(ZonesStringInputSigDelegate callback)
+        public void Pressed235(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone235], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed235], this);
             }
         }
 
-        public void Zone236(ZonesStringInputSigDelegate callback)
+        public void Pressed236(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone236], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed236], this);
             }
         }
 
-        public void Zone237(ZonesStringInputSigDelegate callback)
+        public void Pressed237(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone237], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed237], this);
             }
         }
 
-        public void Zone238(ZonesStringInputSigDelegate callback)
+        public void Pressed238(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone238], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed238], this);
             }
         }
 
-        public void Zone239(ZonesStringInputSigDelegate callback)
+        public void Pressed239(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone239], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed239], this);
             }
         }
 
-        public void Zone240(ZonesStringInputSigDelegate callback)
+        public void Pressed240(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone240], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed240], this);
             }
         }
 
-        public void Zone241(ZonesStringInputSigDelegate callback)
+        public void Pressed241(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone241], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed241], this);
             }
         }
 
-        public void Zone242(ZonesStringInputSigDelegate callback)
+        public void Pressed242(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone242], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed242], this);
             }
         }
 
-        public void Zone243(ZonesStringInputSigDelegate callback)
+        public void Pressed243(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone243], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed243], this);
             }
         }
 
-        public void Zone244(ZonesStringInputSigDelegate callback)
+        public void Pressed244(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone244], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed244], this);
             }
         }
 
-        public void Zone245(ZonesStringInputSigDelegate callback)
+        public void Pressed245(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone245], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed245], this);
             }
         }
 
-        public void Zone246(ZonesStringInputSigDelegate callback)
+        public void Pressed246(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone246], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed246], this);
             }
         }
 
-        public void Zone247(ZonesStringInputSigDelegate callback)
+        public void Pressed247(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone247], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed247], this);
             }
         }
 
-        public void Zone248(ZonesStringInputSigDelegate callback)
+        public void Pressed248(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone248], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed248], this);
             }
         }
 
-        public void Zone249(ZonesStringInputSigDelegate callback)
+        public void Pressed249(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone249], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed249], this);
             }
         }
 
-        public void Zone0(ZonesStringInputSigDelegate callback)
+        public void Pressed250(LoadsBoolInputSigDelegate callback)
         {
             for (int index = 0; index < Devices.Count; index++)
             {
-                callback(Devices[index].SmartObjects[ControlJoinId].StringInput[Joins.Strings.Zone0], this);
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.Pressed250], this);
             }
         }
 
@@ -7855,7 +5359,7 @@ namespace CBlink
 
         public override string ToString()
         {
-            return string.Format("Contract: {0} Component: {1} HashCode: {2} {3}", "Zones", GetType().Name, GetHashCode(), UserObject != null ? "UserObject: " + UserObject : null);
+            return string.Format("Contract: {0} Component: {1} HashCode: {2} {3}", "Loads", GetType().Name, GetHashCode(), UserObject != null ? "UserObject: " + UserObject : null);
         }
 
         #endregion
@@ -7871,6 +5375,7 @@ namespace CBlink
 
             IsDisposed = true;
 
+            Press0 = null;
             Press1 = null;
             Press2 = null;
             Press3 = null;
@@ -8059,7 +5564,6 @@ namespace CBlink
             Press186 = null;
             Press187 = null;
             Press188 = null;
-            Press189 = null;
             Press190 = null;
             Press191 = null;
             Press192 = null;
@@ -8120,8 +5624,8 @@ namespace CBlink
             Press247 = null;
             Press248 = null;
             Press249 = null;
-            Press0 = null;
-            Save_Area = null;
+            Press250 = null;
+            Press189 = null;
         }
 
         #endregion

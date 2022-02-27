@@ -67,6 +67,7 @@ this.rout.active=4  }
 
 ZoneArea() {
   this.rout.active=1  }
+
     
   Passcode() {
     const dialogRef = this.dialog.open(View3Component, {
@@ -76,10 +77,14 @@ ZoneArea() {
   onclick() {
     this.rout.active = 5;}
 
-    floorplan() {
-      this.rout.active = 2;
+    LoadSelector() {
+      this.rout.active = 7;
     }
+  scenesave()
+{
+  this.rout.active = 8;
 
+}
       public useDefault = false;
 
       public toggle(event: MatSlideToggleChange) {

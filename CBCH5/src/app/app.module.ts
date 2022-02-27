@@ -43,6 +43,8 @@ import { View8Component } from './view8/view8.component';
 import { View9Component } from './view9/view9.component';
 import { TimeDelayService } from "./time-delay.service";
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { LoadselectComponent } from './loadselect/loadselect.component';
+import { ScenesaveComponent } from './scenesave/scenesave.component';
 
 const configuration: Partial<WebXPanelConfigParams> = { 
    // host: '', // defaults to window.location.host
@@ -81,7 +83,7 @@ WebXPanel.addEventListener(WebXPanelEvents.CONNECT_CIP, ({detail}) => {
   }); 
 
 @NgModule({
-  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent, EditnameComponent, EditorpageComponent, RamptimeComponent, ScenepopComponent, ConfirmationComponent, SettimeComponent, View6Component, View7Component, FpzonecontrolComponent, ZumfhComponent, View8Component, View9Component],
+  declarations: [AppComponent, ScenesComponent, UtilitiesComponent, View3Component, View4Component, View5Component, DmxpopComponent, AreapopComponent, EditnameComponent, EditorpageComponent, RamptimeComponent, ScenepopComponent, ConfirmationComponent, SettimeComponent, View6Component, View7Component, FpzonecontrolComponent, ZumfhComponent, View8Component, View9Component, LoadselectComponent, ScenesaveComponent],
   imports: [BrowserModule, MatSnackBarModule, FontAwesomeModule, ScrollingModule, ColorSketchModule, NoopAnimationsModule, BrowserAnimationsModule, MatDialogModule, ColorChromeModule, MatSliderModule, FormsModule, MatGridListModule, MatSlideToggleModule, MatButtonModule, MatButtonToggleModule,NgxMaterialTimepickerModule, DragDropModule, UserIdleModule.forRoot({ idle: 100, timeout: 10, ping: 120 })],
   providers: [
     { provide: APP_BASE_HREF, useValue: './' },
