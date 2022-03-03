@@ -28,6 +28,14 @@ namespace CBlink
         event EventHandler<UIEventArgs> Scenes15;
         event EventHandler<UIEventArgs> Raise;
         event EventHandler<UIEventArgs> Lower;
+        event EventHandler<UIEventArgs> SceneSave0;
+        event EventHandler<UIEventArgs> SceneSave1;
+        event EventHandler<UIEventArgs> SceneSave2;
+        event EventHandler<UIEventArgs> SceneSave3;
+        event EventHandler<UIEventArgs> SceneSave4;
+        event EventHandler<UIEventArgs> SceneSave5;
+        event EventHandler<UIEventArgs> SceneSave6;
+        event EventHandler<UIEventArgs> SceneSave7;
 
         void Scenefb0(ScenesBoolInputSigDelegate callback);
         void Scenefb1(ScenesBoolInputSigDelegate callback);
@@ -45,6 +53,8 @@ namespace CBlink
         void Scenefb13(ScenesBoolInputSigDelegate callback);
         void Scenefb14(ScenesBoolInputSigDelegate callback);
         void Scenefb15(ScenesBoolInputSigDelegate callback);
+        void SceneSaveProgress(ScenesBoolInputSigDelegate callback);
+        void SceneSave(ScenesBoolInputSigDelegate callback);
         void ScenesName0(ScenesStringInputSigDelegate callback);
         void ScenesName1(ScenesStringInputSigDelegate callback);
         void ScenesName2(ScenesStringInputSigDelegate callback);
@@ -99,6 +109,14 @@ namespace CBlink
                 public const uint Scenes15 = 16;
                 public const uint Raise = 17;
                 public const uint Lower = 18;
+                public const uint SceneSave0 = 35;
+                public const uint SceneSave1 = 36;
+                public const uint SceneSave2 = 37;
+                public const uint SceneSave3 = 38;
+                public const uint SceneSave4 = 39;
+                public const uint SceneSave5 = 40;
+                public const uint SceneSave6 = 41;
+                public const uint SceneSave7 = 42;
 
                 public const uint Scenefb0 = 19;
                 public const uint Scenefb1 = 20;
@@ -116,6 +134,8 @@ namespace CBlink
                 public const uint Scenefb13 = 32;
                 public const uint Scenefb14 = 33;
                 public const uint Scenefb15 = 34;
+                public const uint SceneSaveProgress = 35;
+                public const uint SceneSave = 36;
             }
             internal static class Strings
             {
@@ -166,6 +186,14 @@ namespace CBlink
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Scenes15, onScenes15);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Raise, onRaise);
             ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.Lower, onLower);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.SceneSave0, onSceneSave0);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.SceneSave1, onSceneSave1);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.SceneSave2, onSceneSave2);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.SceneSave3, onSceneSave3);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.SceneSave4, onSceneSave4);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.SceneSave5, onSceneSave5);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.SceneSave6, onSceneSave6);
+            ComponentMediator.ConfigureBooleanEvent(controlJoinId, Joins.Booleans.SceneSave7, onSceneSave7);
 
         }
 
@@ -329,6 +357,70 @@ namespace CBlink
                 handler(this, UIEventArgs.CreateEventArgs(eventArgs));
         }
 
+        public event EventHandler<UIEventArgs> SceneSave0;
+        private void onSceneSave0(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = SceneSave0;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> SceneSave1;
+        private void onSceneSave1(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = SceneSave1;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> SceneSave2;
+        private void onSceneSave2(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = SceneSave2;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> SceneSave3;
+        private void onSceneSave3(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = SceneSave3;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> SceneSave4;
+        private void onSceneSave4(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = SceneSave4;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> SceneSave5;
+        private void onSceneSave5(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = SceneSave5;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> SceneSave6;
+        private void onSceneSave6(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = SceneSave6;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
+        public event EventHandler<UIEventArgs> SceneSave7;
+        private void onSceneSave7(SmartObjectEventArgs eventArgs)
+        {
+            EventHandler<UIEventArgs> handler = SceneSave7;
+            if (handler != null)
+                handler(this, UIEventArgs.CreateEventArgs(eventArgs));
+        }
+
 
         public void Scenefb0(ScenesBoolInputSigDelegate callback)
         {
@@ -458,6 +550,22 @@ namespace CBlink
             }
         }
 
+        public void SceneSaveProgress(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.SceneSaveProgress], this);
+            }
+        }
+
+        public void SceneSave(ScenesBoolInputSigDelegate callback)
+        {
+            for (int index = 0; index < Devices.Count; index++)
+            {
+                callback(Devices[index].SmartObjects[ControlJoinId].BooleanInput[Joins.Booleans.SceneSave], this);
+            }
+        }
+
 
         public void ScenesName0(ScenesStringInputSigDelegate callback)
         {
@@ -576,6 +684,14 @@ namespace CBlink
             Scenes15 = null;
             Raise = null;
             Lower = null;
+            SceneSave0 = null;
+            SceneSave1 = null;
+            SceneSave2 = null;
+            SceneSave3 = null;
+            SceneSave4 = null;
+            SceneSave5 = null;
+            SceneSave6 = null;
+            SceneSave7 = null;
         }
 
         #endregion

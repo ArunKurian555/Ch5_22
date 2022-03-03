@@ -1,6 +1,6 @@
 {
 	"name": "CBlink",
-	"timestamp": "2022-02-26 18:25:28.330",
+	"timestamp": "2022-02-27 16:06:10.740",
 	"version": "1.0.0.0",
 	"schema_version": 1,
 	"extra_value": "",
@@ -75,7 +75,9 @@
 					"31": "Scenes.Scenefb12",
 					"32": "Scenes.Scenefb13",
 					"33": "Scenes.Scenefb14",
-					"34": "Scenes.Scenefb15"
+					"34": "Scenes.Scenefb15",
+					"35": "Scenes.SceneSaveProgress",
+					"36": "Scenes.SceneSave"
 				},
 				"3": {
 					"1": "Zones.Pressed1",
@@ -2027,6 +2029,38 @@
 				},
 				"Scenes.Lower": {
 					"joinId": 18,
+					"smartObjectId": 2
+				},
+				"Scenes.SceneSave0": {
+					"joinId": 35,
+					"smartObjectId": 2
+				},
+				"Scenes.SceneSave1": {
+					"joinId": 36,
+					"smartObjectId": 2
+				},
+				"Scenes.SceneSave2": {
+					"joinId": 37,
+					"smartObjectId": 2
+				},
+				"Scenes.SceneSave3": {
+					"joinId": 38,
+					"smartObjectId": 2
+				},
+				"Scenes.SceneSave4": {
+					"joinId": 39,
+					"smartObjectId": 2
+				},
+				"Scenes.SceneSave5": {
+					"joinId": 40,
+					"smartObjectId": 2
+				},
+				"Scenes.SceneSave6": {
+					"joinId": 41,
+					"smartObjectId": 2
+				},
+				"Scenes.SceneSave7": {
+					"joinId": 42,
 					"smartObjectId": 2
 				},
 				"Zones.Press1": {

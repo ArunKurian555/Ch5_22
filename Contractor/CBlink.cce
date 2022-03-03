@@ -9588,6 +9588,86 @@
 					"id": "_pudiuyix1",
 					"parentId": "_swt91nf9e",
 					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "SceneSaveProgress",
+					"siblingId": "_3pl98e3cl",
+					"dataType": 1,
+					"notes": "",
+					"id": "_51tgwzpe1",
+					"parentId": "_swt91nf9e",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "SceneSave",
+					"siblingId": "_92mpsnypz",
+					"dataType": 1,
+					"notes": "",
+					"id": "_e2xydq9l4",
+					"parentId": "_swt91nf9e",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "",
+					"siblingId": "_b9ax21nmo",
+					"dataType": 1,
+					"notes": "",
+					"id": "_08ze5ripc",
+					"parentId": "_swt91nf9e",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "",
+					"siblingId": "_ci892ymz5",
+					"dataType": 1,
+					"notes": "",
+					"id": "_ta99xu487",
+					"parentId": "_swt91nf9e",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "",
+					"siblingId": "_slrg2qj81",
+					"dataType": 1,
+					"notes": "",
+					"id": "_n5gycccuc",
+					"parentId": "_swt91nf9e",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "",
+					"siblingId": "_5amo2bz93",
+					"dataType": 1,
+					"notes": "",
+					"id": "_z9ayp11k8",
+					"parentId": "_swt91nf9e",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "",
+					"siblingId": "_sl0y2ryv5",
+					"dataType": 1,
+					"notes": "",
+					"id": "_grf3kef7j",
+					"parentId": "_swt91nf9e",
+					"attributeType": 0
+				},
+				{
+					"Errors": [],
+					"name": "",
+					"siblingId": "_c7fn6ohy5",
+					"dataType": 1,
+					"notes": "",
+					"id": "_vfinumgb3",
+					"parentId": "_swt91nf9e",
+					"attributeType": 0
 				}
 			],
 			"feedbacks": [
@@ -10018,6 +10098,86 @@
 					"dataType": 3,
 					"notes": "",
 					"id": "_r78lu1u0f",
+					"parentId": "_swt91nf9e",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "SceneSave0",
+					"siblingId": "_51tgwzpe1",
+					"dataType": 1,
+					"notes": "",
+					"id": "_3pl98e3cl",
+					"parentId": "_swt91nf9e",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "SceneSave1",
+					"siblingId": "_e2xydq9l4",
+					"dataType": 1,
+					"notes": "",
+					"id": "_92mpsnypz",
+					"parentId": "_swt91nf9e",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "SceneSave2",
+					"siblingId": "_08ze5ripc",
+					"dataType": 1,
+					"notes": "",
+					"id": "_b9ax21nmo",
+					"parentId": "_swt91nf9e",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "SceneSave3",
+					"siblingId": "_ta99xu487",
+					"dataType": 1,
+					"notes": "",
+					"id": "_ci892ymz5",
+					"parentId": "_swt91nf9e",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "SceneSave4",
+					"siblingId": "_n5gycccuc",
+					"dataType": 1,
+					"notes": "",
+					"id": "_slrg2qj81",
+					"parentId": "_swt91nf9e",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "SceneSave5",
+					"siblingId": "_z9ayp11k8",
+					"dataType": 1,
+					"notes": "",
+					"id": "_5amo2bz93",
+					"parentId": "_swt91nf9e",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "SceneSave6",
+					"siblingId": "_grf3kef7j",
+					"dataType": 1,
+					"notes": "",
+					"id": "_sl0y2ryv5",
+					"parentId": "_swt91nf9e",
+					"attributeType": 1
+				},
+				{
+					"Errors": [],
+					"name": "SceneSave7",
+					"siblingId": "_vfinumgb3",
+					"dataType": 1,
+					"notes": "",
+					"id": "_c7fn6ohy5",
 					"parentId": "_swt91nf9e",
 					"attributeType": 1
 				}

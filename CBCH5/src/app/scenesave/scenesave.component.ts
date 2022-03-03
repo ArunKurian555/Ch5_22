@@ -12,9 +12,20 @@ export class ScenesaveComponent implements OnInit {
   constructor(public rout: ChRouteService, public dialog: MatDialog,private _snackBar: MatSnackBar) { }
 
 
-  ngOnInit(): void {
-  }
 
+  activeZone: number[];
+  ngOnInit(): void {
+    let items = [];
+      for (let i = 1; i < 9; i++) {
+        
+          items.push(i);
+        
+      }
+      this.activeZone = items;
+
+    
+  }
+  
   clicked()
 
   {
