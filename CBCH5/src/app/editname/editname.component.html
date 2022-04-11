@@ -22,12 +22,16 @@
 
 
     </div>
-    <div class="item2">
+    <div class="renameitem">
         <cdk-virtual-scroll-viewport itemSize="10" class=" scroller " minBufferPx="500" maxBufferPx="4000">
             <div *cdkVirtualFor="let item of activeZones; let idx = index"
                 class="loads animate__animated animate__fadeIn">
-                <div></div>
                 <p id="Zonename">{{activezonelabel[activeZones[idx]]}}</p>
+                <ch5-slider stretch="width" handleShape="circle" orientation="horizontal" tapSettable="true"
+                style="padding: 1em 2em 2em 2em;" sendEventOnChange="{{activeZones[idx]}}"
+                receiveStateValue="{{activeZones[idx]}}" tooltipshowtype="auto" tooltipdisplaytype="%">
+            </ch5-slider>
+
                 <button class="buttons" mat-fab (click)="editname2(activeZones[idx])">
                     <mat-icon class="fas fa-edit fa-2x"></mat-icon>
                 </button>
