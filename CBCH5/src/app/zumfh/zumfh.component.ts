@@ -16,9 +16,9 @@ export class ZumfhComponent implements OnInit {
 
 
  
-    self.rout.active = 3;
+    self.rout.active = 5;
 
-  },600);
+  },6000);
   }
 
 }

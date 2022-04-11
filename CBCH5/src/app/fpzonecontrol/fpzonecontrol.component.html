@@ -50,6 +50,13 @@
                 style="padding: 1em 2em 2em 2em;" sendEventOnChange="{{activeZones[idx]}}"
                 receiveStateValue="{{activeZones[idx]}}" tooltipshowtype="auto" tooltipdisplaytype="%">
             </ch5-slider>
+            <div  *ngIf="CCTactive[activeZones[idx]-1] == 1">
+            <ch5-slider class="CCT" stretch="width" handleShape="circle" orientation="horizontal" tapSettable="true"
+                style="padding: 0" sendEventOnChange="{{activeZones[idx]+300}}"
+                receiveStateValue="{{activeZones[idx]+300}}" tooltipshowtype="auto" tooltipdisplaytype="%">
+            </ch5-slider>
+        </div>
+            
         </div>
         <ch5-button class="load-button Ls" id="rightbutton" type="primary"  label="On" size="x-small"
             sendEventOnClick="{{activeZones[idx]*10-9}}">

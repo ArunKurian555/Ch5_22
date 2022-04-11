@@ -82,7 +82,7 @@ ZoneArea() {
     }
   scenesave()
 {
-  this.rout.active = 8;
+  this.rout.active = 2;
 
 }
       public useDefault = false;

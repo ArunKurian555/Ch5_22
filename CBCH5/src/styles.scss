@@ -225,6 +225,21 @@ margin: 2px;
      background: rgb(69, 134, 255); 
    }
   }
+
+.CCT{
+  
+.noUi-base
+{
+  background-image:linear-gradient(to right, #ffb400, white, #6ad0fa);
+  border-radius: 25px;
+  
+}
+  .noUi-connect
+  {
+   background: rgba(255, 255, 255, 0) !important ;
+  }
+}
+
  .loads:nth-child(even) {
     background-color: rgba(255, 255, 255, 0.76) !important;
 

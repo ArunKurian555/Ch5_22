@@ -22,15 +22,15 @@ export class View3Component implements OnInit {
   
   click1()
   {
-  CrComLib.publishEvent('b', "3702", true);
-  CrComLib.publishEvent('b', "3702", false);
+  CrComLib.publishEvent('b', "3072", true);
+  CrComLib.publishEvent('b', "3072", false);
   
   }
   
 click2()
 {
-CrComLib.publishEvent('b', "3703", true);
-CrComLib.publishEvent('b', "3703", false);
+CrComLib.publishEvent('b', "3073", true);
+CrComLib.publishEvent('b', "3073", false);
 
 }
 
