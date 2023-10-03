@@ -64,7 +64,7 @@ export class AppComponent {
     this.userIdle.startWatching();
 
     // Start watching when user idle is starting.
-    this.userIdle.onTimerStart().subscribe(count => console.log(count));
+    //this.userIdle.onTimerStart().subscribe(count => console.log(count));
 
     // Start watch when time is up.
     // this.userIdle.onTimeout().subscribe(() =>
